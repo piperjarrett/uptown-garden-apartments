@@ -5,3 +5,10 @@ footer {
     justify-content: space-between;
     background-color: #ABABAB;
 }
+
+.footer-info {
+    width: 50rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
