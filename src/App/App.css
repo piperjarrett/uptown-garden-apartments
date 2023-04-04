@@ -1,10 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin Slab");
 
 * {
   font-family: "PT Sans", sans-serif;
+
+}
+
+html {
+  background: url('../assets/complex-image.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .App {
   text-align: center;
-  background: url("../assets/complex-image.jpg")
 }

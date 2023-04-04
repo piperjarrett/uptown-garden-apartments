@@ -1,0 +1,30 @@
+h1 {
+    background: rgba(244,244,244,1);
+    opacity: .8;
+    padding: 2rem;
+    width: 60%;
+    font-size: 5rem;
+    margin-left: 30%;
+}
+
+.homepage-content-container {
+    background: rgba(244,244,244,1);
+    padding: 2rem;
+}
+
+.homepage-contact {
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.3rem solid;
+    border-bottom: 0.3rem solid;
+    padding: 1rem;
+}
+
+.homepage-contact-info {
+    width: 15rem;
+    overflow-wrap: break-word;
+}
+
+.about-info {
+    margin-top: 3rem;
+}
