@@ -26,5 +26,12 @@ h1 {
 }
 
 .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 3rem;
+}
+
+.about-paragraph {
+    width: 50%;
 }

@@ -13,7 +13,7 @@ const NavBar = () => {
         />
       </NavLink>
       <div className="dropdown">
-        <p className="communities">Communities</p>
+        <p className="complex">Complexes</p>
         <div className="dropdown-content">
           <NavLink
             to="/Pennsylvania"
