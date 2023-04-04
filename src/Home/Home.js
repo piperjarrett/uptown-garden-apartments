@@ -22,8 +22,10 @@ const Home = () => {
         <div className="about-info">
           <h2>About Uptown Garden Apartments</h2>
           <p>
-            Uptown GArden apartments is an apartment complex with three
-            different complexes.{" "}
+            Welcome to Uptown Apartments Complex that is located in the heart of
+            Albuqueuerque, New Mexico. Our complex boasts 78 spacious units that
+            are perfect for singles, couples, and families looking for a
+            comfortable and convenient living space.
           </p>
         </div>
       </div>
