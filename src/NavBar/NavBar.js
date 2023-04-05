@@ -49,14 +49,16 @@ const NavBar = () => {
       </NavLink>
       <div className="dropdown">
         <p>Contact Us</p>
-        <div className="dropdown-content">
+        <div className="dropdown-content-contact">
           <div className="nav-contact-info">
             <img src={phoneIcon} alt="phone icon" className="phone-icon" />
             <p>(505)-948-8299</p>
           </div>
           <div className="nav-contact-info">
             <img src={emailIcon} alt="email icon" className="email-icon" />
-            <p onClick={openEmail}>uptowngardensabq@gmail.com</p>
+            <p className="email-paragraph" onClick={openEmail}>
+              uptowngardensabq@gmail.com
+            </p>
           </div>
         </div>
       </div>
