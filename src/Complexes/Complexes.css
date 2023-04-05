@@ -1,0 +1,39 @@
+.complexes {
+    background: rgba(244,244,244,1);
+    padding: 1rem;
+}
+
+.complex-info {
+    
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+.heading-div {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.complex-apartments {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ABABAB;
+    width: 100%;
+    padding: 2rem;
+}
+.complex-apartment-div {
+    height: 30rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.complex-apartment-div:hover {
+    transform: scale(1.1)
+}

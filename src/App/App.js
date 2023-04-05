@@ -3,6 +3,7 @@ import Home from "../Home/Home";
 import "./App.css";
 import Footer from "../Footer/Footer";
 import { Route } from "react-router-dom";
+import Complexes from "../Complexes/Complexes";
 
 function App() {
   return (
@@ -10,6 +11,15 @@ function App() {
       <NavBar />
       <Route exact path="/">
         <Home />
+      </Route>
+      <Route path="/Pennsylvania">
+        <Complexes />
+      </Route>
+      <Route path="/Dallas">
+        <Complexes />
+      </Route>
+      <Route path="/Marble">
+        <Complexes />
       </Route>
       <Footer />
     </section>
