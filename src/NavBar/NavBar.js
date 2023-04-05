@@ -3,6 +3,9 @@ import verticalLogo from "../assets/LogoColorTextRight.jpeg";
 import "./NavBar.css";
 
 const NavBar = () => {
+  const openEmail = () => {
+    window.open("mailto:uptowngardensabq@gmail.com?");
+  };
   return (
     <nav className="nav-bar">
       <NavLink to="/" style={{ color: "inherit", textDecoration: "none" }}>
@@ -42,8 +45,16 @@ const NavBar = () => {
       >
         <p>About The Location</p>
       </NavLink>
+      <div className="dropdown">
+        <p>Contact Us</p>
+        <div className="dropdown-content">
+          <img src="" />
+          <p>(505)-948-8299</p>
 
-      <p>Contact Us</p>
+          <img src="" />
+          <p onClick={openEmail}>uptowngardensabq@gmail.com</p>
+        </div>
+      </div>
     </nav>
   );
 };
