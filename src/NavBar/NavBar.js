@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import verticalLogo from "../assets/LogoColorTextRight.jpeg";
 import "./NavBar.css";
+import phoneIcon from "../assets/phone-svgrepo-com.svg";
+import emailIcon from "../assets/mail-svgrepo-com.svg";
 
 const NavBar = () => {
   const openEmail = () => {
@@ -48,11 +50,14 @@ const NavBar = () => {
       <div className="dropdown">
         <p>Contact Us</p>
         <div className="dropdown-content">
-          <img src="" />
-          <p>(505)-948-8299</p>
-
-          <img src="" />
-          <p onClick={openEmail}>uptowngardensabq@gmail.com</p>
+          <div className="nav-contact-info">
+            <img src={phoneIcon} alt="phone icon" className="phone-icon" />
+            <p>(505)-948-8299</p>
+          </div>
+          <div className="nav-contact-info">
+            <img src={emailIcon} alt="email icon" className="email-icon" />
+            <p onClick={openEmail}>uptowngardensabq@gmail.com</p>
+          </div>
         </div>
       </div>
     </nav>

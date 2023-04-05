@@ -8,7 +8,7 @@
 
 
 .communities {
-    /* background-color: #04AA6D; */
+    
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -40,3 +40,15 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .phone-icon, .email-icon {
+    width: 2rem;
+    height: 3rem;
+  }
+
+  .nav-contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .3rem;
+  }
