@@ -4,8 +4,16 @@ import "./Complexes.css";
 const Complexes = () => {
   return (
     <section className="complexes">
-      <img src={apartmentComplex} alt="Penn Apartment Complex" />
-      <h2>Pennsylvania</h2>
+      {/* <img src={apartmentComplex} alt="Penn Apartment Complex" /> */}
+      <div
+        className="heading-div"
+        style={{
+          backgroundImage: `url(${apartmentComplex})`,
+          backgroundSize: "cover",
+        }}
+      >
+        <h2>Pennsylvania</h2>
+      </div>
       <div className="complex-info">
         <div className="complex-overview">
           <h4>Overview</h4>
