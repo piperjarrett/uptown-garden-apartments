@@ -83,8 +83,8 @@ button:hover {
 }
 
 .ind-apartment-ammentities {
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: .3rem solid;
+    border-bottom: .3rem solid;
 }
 
 .apartment-layout {

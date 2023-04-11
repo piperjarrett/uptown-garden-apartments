@@ -27,7 +27,10 @@ const Complexes = () => {
         </div>
       </div>
       <div className="complex-apartments">
-        <NavLink to="/2bed/1bath">
+        <NavLink
+          to="/2bed/1bath"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
           <div
             className="complex-apartment-div"
             style={{
