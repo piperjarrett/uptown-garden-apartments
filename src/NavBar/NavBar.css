@@ -17,6 +17,7 @@
   .dropdown {
     position: relative;
     display: inline-block;
+    
   }
   
   .dropdown-content  {
@@ -34,6 +35,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(189, 188, 188);
     z-index: 1;
+    width: 11rem;
   }
   
   .dropdown-content p {
@@ -45,9 +47,11 @@
 
   .dropdown-content-contact p {
     color: black;
-    padding: 12px 16px;
+    /* padding: 12px 16px; */
     text-decoration: none;
     display: block;
+    font-size: 10px;
+    
   }
   
   .dropdown-content p:hover {background-color: #ddd;}
@@ -58,13 +62,14 @@
   
 
   .phone-icon, .email-icon {
-    width: 2rem;
-    height: 3rem;
+    width: 1rem;
+    height: 2rem;
   }
 
   .nav-contact-info {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: column;
     padding: .3rem;
   }
