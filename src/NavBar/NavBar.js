@@ -1,8 +1,13 @@
 import { NavLink } from "react-router-dom";
 import verticalLogo from "../assets/LogoColorTextRight.jpeg";
 import "./NavBar.css";
+import phoneIcon from "../assets/phone-svgrepo-com.svg";
+import emailIcon from "../assets/mail-svgrepo-com.svg";
 
 const NavBar = () => {
+  const openEmail = () => {
+    window.open("mailto:uptowngardensabq@gmail.com?");
+  };
   return (
     <nav className="nav-bar">
       <NavLink to="/" style={{ color: "inherit", textDecoration: "none" }}>
@@ -42,8 +47,21 @@ const NavBar = () => {
       >
         <p>About The Location</p>
       </NavLink>
-
-      <p>Contact Us</p>
+      <div className="dropdown">
+        <p>Contact Us</p>
+        <div className="dropdown-content-contact">
+          <div className="nav-contact-info">
+            <img src={phoneIcon} alt="phone icon" className="phone-icon" />
+            <p>(505)-948-8299</p>
+          </div>
+          <div className="nav-contact-info">
+            <img src={emailIcon} alt="email icon" className="email-icon" />
+            <p className="email-paragraph" onClick={openEmail}>
+              uptowngardensabq@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
