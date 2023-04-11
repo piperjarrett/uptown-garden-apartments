@@ -2,6 +2,10 @@ import "./Apartment.css";
 import layout from "../assets/layout.png";
 
 const Apartment = () => {
+  const openEmail = () => {
+    window.open("mailto:uptowngardensabq@gmail.com?");
+  };
+
   return (
     <div className="ind-apartment">
       <div className="ind-apartment-top">
@@ -10,7 +14,9 @@ const Apartment = () => {
           <h4>900 Sq. Ft.</h4>
         </div>
         <div className="ind-apartment-buttons">
-          <button>Download Application</button>
+          <a href={process.env.PUBLIC_URL + "/New Application.pdf"} download>
+            <button onClick={openEmail}>Download Application</button>
+          </a>
           <button>Contact and Book a Tour</button>
         </div>
       </div>
