@@ -1,0 +1,95 @@
+.ind-apartment-info {
+    background: rgba(244,244,244,1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30rem;
+    height: 20rem;
+    /* justify-content: center; */
+    padding-left: 5rem;
+    padding-top: 3rem;
+    opacity: .8;
+}
+
+ .rent-price {
+    /* background: rgba(244,244,244,1);
+    width: 25rem;
+    height: 2rem;  
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    opacity: .8; */
+    /* background: rgba(244,244,244,1);
+     */
+     background-color: #ABABAB;
+}
+
+.header-rent-price {
+    margin-top: 0rem;
+    background: rgba(244,244,244,1);
+    width: 25rem;
+    height: 2rem;  
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    opacity: .8;
+    width: 30rem;
+    margin-bottom: 0;
+}
+.ind-apartment-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+}
+
+button {
+    padding: 1rem;
+    background: lightblue;
+    border: none;
+    margin: 0.5rem;
+    width: 8rem;
+}
+
+.ind-apartment-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 8%;
+    margin-left: 2rem;
+}
+
+.ind-apartment-bottom {
+    /* background: rgba(244,244,244,1); */
+    background-color: #ABABAB;
+    margin: 0rem;
+    padding: 1rem;
+}
+
+.ind-apartment-bottom, p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.ind-apartment-ammentities {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+.apartment-layout {
+    width: 30rem;
+    margin: 2rem;
+}
+
+.amentities-paragraphs {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}

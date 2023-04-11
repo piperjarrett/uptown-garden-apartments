@@ -4,6 +4,7 @@ import "./App.css";
 import Footer from "../Footer/Footer";
 import { Route } from "react-router-dom";
 import Complexes from "../Complexes/Complexes";
+import Apartment from "../Apartment/Apartment";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </Route>
       <Route path="/Marble">
         <Complexes />
+      </Route>
+      <Route path="/2bed/1bath">
+        <Apartment />
       </Route>
       <Footer />
     </section>

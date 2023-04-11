@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import apartmentComplex from "../assets/complex-image.jpg";
 import "./Complexes.css";
 
@@ -26,15 +27,17 @@ const Complexes = () => {
         </div>
       </div>
       <div className="complex-apartments">
-        <div
-          className="complex-apartment-div"
-          style={{
-            backgroundImage: `url(${apartmentComplex})`,
-            backgroundSize: "cover",
-          }}
-        >
-          <p>2 Bed, 1 Bath</p>
-        </div>
+        <NavLink to="/2bed/1bath">
+          <div
+            className="complex-apartment-div"
+            style={{
+              backgroundImage: `url(${apartmentComplex})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <p>2 Bed, 1 Bath</p>
+          </div>
+        </NavLink>
         <div
           className="complex-apartment-div"
           style={{
