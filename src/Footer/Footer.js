@@ -12,9 +12,10 @@ const Footer = () => {
         </div>
         <div>
           <h4>Leasing Office</h4>
-          <p>935 N Penn</p>
-          <p>Mon - Friday: 9am - 6pm</p>
-          <p>Sat & Sun: 11:00am - 5pm</p>
+          <p>1113 Pennslyvania NE</p>
+          <p>Albuqueuerque, NM. 87110</p>
+          <p>Mon - Friday: 10am - 5pm</p>
+          <p>Sat: 2pm - 4pm</p>
         </div>
       </div>
     </footer>
