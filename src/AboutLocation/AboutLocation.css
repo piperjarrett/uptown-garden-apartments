@@ -3,3 +3,34 @@
     padding: 1rem;
 }
 
+.location-education {
+    margin: 1rem;
+}
+
+.college {
+    display: flex
+}
+
+.location-public-schools {
+    border-top: 0.3rem solid;
+    border-bottom: 0.3rem solid;
+    margin: 1rem;
+    
+}
+
+.public-schools {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-location-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-location h2 {
+    width: 20rem;
+    
+    font-size: 3rem;
+}
