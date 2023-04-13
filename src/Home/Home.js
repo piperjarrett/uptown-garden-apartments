@@ -8,7 +8,8 @@ const Home = () => {
         <div className="homepage-contact">
           <div className="homepage-contact-info">
             <p>Visit our Office</p>
-            <p>925 N Penn</p>
+            <p>1113 Pennslyvania NE</p>
+            <p>Albuqueuerque, NM. 87110</p>
           </div>
           <div className="homepage-contact-info">
             <p>Let's Talk</p>
