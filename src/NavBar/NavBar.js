@@ -24,7 +24,7 @@ const NavBar = () => {
             to="/Pennsylvania"
             style={{ color: "inherit", textDecoration: "none" }}
           >
-            <p>penn</p>
+            <p>Pennsylvania</p>
           </NavLink>
           <NavLink
             to="/Dallas"

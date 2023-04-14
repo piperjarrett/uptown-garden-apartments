@@ -1,5 +1,5 @@
 .about-location {
-    background-color: rgba(244,244,244,1);
+    background-color: #efe1d8;
     padding: 1rem;
 }
 
@@ -8,17 +8,18 @@
 }
 
 .college {
-    display: flex
+    display: flex;
+    align-items: center;
 }
 
 .location-public-schools {
-    border-top: 0.3rem solid;
-    border-bottom: 0.3rem solid;
+    border-top: 0.3rem solid #884d3b;
+    border-bottom: 0.3rem solid #884d3b;
     margin: 1rem;
-    
+     padding: 1rem;   
 }
 
-.public-schools {
+.public-schools-container, .attractions-container, .get-to-container {
     display: flex;
     justify-content: space-around;
 }
@@ -31,6 +32,16 @@
 
 .about-location h2 {
     width: 20rem;
-    
     font-size: 3rem;
+}
+
+.google-map {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.location-attractions, .location-get-to {
+    border-bottom: 0.3rem solid #884d3b;
+    margin: 1rem;
+     padding: 1rem;  
 }
