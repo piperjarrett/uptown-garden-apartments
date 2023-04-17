@@ -1,4 +1,4 @@
-import GoogleMap from "../GoogleMap/GoogleMap";
+import MapComponent from "../GoogleMap/MapComponent";
 import "./AboutLocation.css";
 
 const AboutLocation = () => {
@@ -77,7 +77,7 @@ const AboutLocation = () => {
       </div>
       <div className="google-map">
         <h3>On a Map</h3>
-        <GoogleMap />
+        <MapComponent />
       </div>
     </div>
   );

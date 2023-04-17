@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-import verticalLogo from "../assets/LogoColorTextRight.jpeg";
+import horizontalLogo from "../assets/IMG_5558.PNG";
+import verticalLogo from "../assets/logo.PNG";
 import "./NavBar.css";
 import phoneIcon from "../assets/phone-svgrepo-com.svg";
 import emailIcon from "../assets/mail-svgrepo-com.svg";
@@ -11,11 +12,18 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <NavLink to="/" style={{ color: "inherit", textDecoration: "none" }}>
-        <img
-          className="vertical-logo"
-          alt="uptown apartments logo"
-          src={verticalLogo}
-        />
+        <div className="logo">
+          <img
+            className="horizontal-logo"
+            src={horizontalLogo}
+            alt="uptown apartments image"
+          />
+          <img
+            className="vertical-logo"
+            alt="uptown apartments logo"
+            src={verticalLogo}
+          />
+        </div>
       </NavLink>
       <div className="dropdown">
         <p className="complex">Complexes</p>

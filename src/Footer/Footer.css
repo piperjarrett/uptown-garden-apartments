@@ -4,11 +4,19 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #cb957c;
+
 }
 
 .footer-info {
-    width: 50rem;
+    width: 50vw;
     display: flex;
+  
     justify-content: space-around;
     align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
 }

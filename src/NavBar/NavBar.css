@@ -5,8 +5,13 @@
     justify-content: space-around;
     background-color: #efe1d8;
 }
-
-
+.logo {
+  display: flex;
+  align-items: center;
+}
+.horizontal-logo {
+  width: 4vw;
+}
 .communities {
     
     padding: 16px;

@@ -22,12 +22,14 @@
 .public-schools-container, .attractions-container, .get-to-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .about-location-top {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about-location h2 {
@@ -44,4 +46,8 @@
     border-bottom: 0.3rem solid #884d3b;
     margin: 1rem;
      padding: 1rem;  
+}
+
+.attraction, .school, .get-to {
+    width: 10rem;
 }
