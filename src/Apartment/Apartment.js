@@ -2,11 +2,12 @@ import "./Apartment.css";
 import layout from "../assets/layout.png";
 import { useEffect } from "react";
 
+
 const Apartment = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+ 
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };

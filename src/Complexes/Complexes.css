@@ -20,12 +20,12 @@
     display: flex;
     justify-content: space-evenly;
     background-color: #cb957c;
-    width: 100%;
+    /* width: 100%; */
     padding: 2rem;
 }
 .complex-apartment-div {
     height: 30rem;
-    width: 25rem;
+    /* width: 25rem; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,4 +36,8 @@
 
 .complex-apartment-div:hover {
     transform: scale(1.1)
+}
+
+.slick-slider {
+    width: 50vw;
 }
