@@ -1,5 +1,56 @@
 .about-location {
-    background-color: rgba(244,244,244,1);
+    background-color: #efe1d8;
     padding: 1rem;
 }
 
+.location-education {
+    margin: 1rem;
+}
+
+.college {
+    display: flex;
+    align-items: center;
+}
+
+.location-public-schools {
+    border-top: 0.3rem solid #884d3b;
+    border-bottom: 0.3rem solid #884d3b;
+    margin: 1rem;
+     padding: 1rem;   
+}
+
+.public-schools-container, .attractions-container, .get-to-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-location-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-location h2 {
+    width: 20rem;
+    font-size: 3rem;
+}
+
+.google-map {
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-attractions, .location-get-to {
+    border-bottom: 0.3rem solid #884d3b;
+    margin: 1rem;
+     padding: 1rem;  
+}
+
+.attraction, .school, .get-to {
+    width: 10rem;
+}

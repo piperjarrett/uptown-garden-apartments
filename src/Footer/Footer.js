@@ -1,9 +1,14 @@
 import "./Footer.css";
-import horizontalLogo from "../assets/LogoColorTextBelow.jpeg";
+// import horizontalLogo from "../assets/LogoColorTextBelow.jpeg";
+import horizontalLogo from "../assets/IMG_5558.PNG";
+import verticalLogo from "../assets/logo.PNG";
 const Footer = () => {
   return (
     <footer>
-      <img src={horizontalLogo} alt="apartment-logo" />
+      <div className="footer-logo">
+        <img src={horizontalLogo} alt="apartment-logo" />
+        <img src={verticalLogo} alt="apartment-logo" />
+      </div>
       <div className="footer-info">
         <div className="footer-contact">
           <h4>Contact Us</h4>
