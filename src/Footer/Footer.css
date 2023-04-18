@@ -10,9 +10,8 @@ footer {
 .footer-info {
     width: 50vw;
     display: flex;
-  
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer-logo {

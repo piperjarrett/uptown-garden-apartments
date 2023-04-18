@@ -1,3 +1,5 @@
+
+
 .complexes {
     background: #efe1d8;
     padding: 1rem;
@@ -16,22 +18,27 @@
     justify-content: center;
     color: white;
 }
-.complex-apartments {
+.complex-apartments-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #cb957c;
     /* width: 100%; */
     padding: 2rem;
+
 }
 .complex-apartment-div {
     height: 30rem;
     /* width: 25rem; */
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     cursor: pointer;
     transition: all .5s ease;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
 }
 
 .complex-apartment-div:hover {
@@ -41,3 +48,29 @@
 .slick-slider {
     width: 50vw;
 }
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-button-next:before, .swiper-button-next:after  {
+    color: #884d3b;
+ 
+    /* width: 5vw; */
+
+  }
+  .swiper-button-prev:after,  .swiper-button-prev:before {
+ color: #884d3b;
+    /* width: 5vw; */
+   
+  }
+
+
+  .swiper-scrollbar-drag {
+    background: #884d3b !important;
+  }
+
+  .complex-apartments, .swiper-slide {
+    width: 45vw;
+  }
