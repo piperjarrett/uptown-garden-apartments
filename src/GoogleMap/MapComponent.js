@@ -18,7 +18,7 @@ const MapComponent = () => {
   return (
     <div style={{ height: "50vh", width: "80vw" }}>
       <GoogleMapReact
-        // bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_API_KEY }}
         defaultCenter={center}
         defaultZoom={15}
         yesIWantToUseGoogleMapApiInternals

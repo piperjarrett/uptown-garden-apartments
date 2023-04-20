@@ -77,20 +77,20 @@ const Complexes = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="swiper-slide">
-              <NavLink
-                to="/2bed/1bath"
-                style={{ color: "inherit", textDecoration: "none" }}
+              <div
+                className="complex-apartment-div"
+                style={{
+                  backgroundImage: `url(${apartmentComplex})`,
+                  backgroundSize: "cover",
+                }}
               >
-                <div
-                  className="complex-apartment-div"
-                  style={{
-                    backgroundImage: `url(${apartmentComplex})`,
-                    backgroundSize: "cover",
-                  }}
+                <NavLink
+                  to="/2bed/1bath"
+                  style={{ color: "inherit", textDecoration: "none" }}
                 >
                   <p>3 Bed, 2 Bath</p>
-                </div>
-              </NavLink>
+                </NavLink>
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>

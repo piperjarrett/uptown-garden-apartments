@@ -1,9 +1,12 @@
 .nav-bar {
-  margin: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #efe1d8;
+    background-color: #f4f4f4;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0px 8px 16px 0px rgb(189, 188, 188);
 }
 .logo {
   display: flex;
@@ -27,7 +30,7 @@
   .dropdown-content  {
     display: none;
     position: absolute;
-    background-color: #efe1d8;
+    background-color: #f4f4f4;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(189, 188, 188);
     z-index: 1;
@@ -35,7 +38,7 @@
   .dropdown-content-contact {
     display: none;
     position: absolute;
-    background-color: #efe1d8;
+    background-color: #f4f4f4;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(189, 188, 188);
     z-index: 1;
