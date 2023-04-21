@@ -1,0 +1,38 @@
+# Use the latest 2.1 version of CircleCI pipeline process engine.
+# See: https://circleci.com/docs/configuration-reference
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cimg/node:16.13.2
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+      - run: npm run deploy
+    environment:
+      GITHUB_TOKEN: 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
+      CUSTOM_DOMAIN: uptowngardensabq.com
+
+  deploy:
+    docker:
+      - image: circleci/python:3.7
+    working_directory: ~/repo
+    steps:
+      - run:
+          name: Checkout gh-pages branch
+          command: |
+            git clone --branch gh-pages --single-branch git@github.com:$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git gh-pages
+      - run:
+          name: Copy files to gh-pages branch
+          command: |
+            rm -rf gh-pages/*
+            cp -r build/* gh-pages/
+            cd gh-pages
+            echo $CUSTOM_DOMAIN > CNAME
+            git config user.email "you@example.com"
+            git config user.name "CircleCI"
+            git add .
+            git commit -m "Deploy to GitHub Pages"
+            git push git@github.com:$CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME.git gh-pages
