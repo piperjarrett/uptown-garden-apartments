@@ -17,7 +17,7 @@ const NavBar = () => {
           <img
             className="horizontal-logo"
             src={horizontalLogo}
-            alt="uptown apartments image"
+            alt="uptown apartments logo"
           />
           <img
             className="vertical-logo"

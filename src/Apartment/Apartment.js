@@ -29,7 +29,7 @@ const Apartment = () => {
         </div>
       </div>
       <div className="ind-apartment-bottom">
-        <img className="apartment-layout" src={layout} />
+        <img className="apartment-layout" src={layout} alt='apartment-layout'/>
         <div className="ind-apartment-ammentities">
           <h4>Ammentities</h4>
           <div className="amentities-paragraphs">

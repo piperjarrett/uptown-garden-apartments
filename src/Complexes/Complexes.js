@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import apartmentComplex from "../assets/complex-image.jpg";
 import "./Complexes.css";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -14,16 +13,16 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Complexes = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    touchMove: true,
-    // nextArrow: "../assets/arrow-left-334.svg",
-    // prevArrow: "../assets/arrow-left-334.svg",
-  };
+  //   const settings = {
+  //     dots: true,
+  //     infinite: true,
+  //     speed: 1000,
+  //     slidesToShow: 1,
+  //     slidesToScroll: 1,
+  //     touchMove: true,
+  //     // nextArrow: "../assets/arrow-left-334.svg",
+  //     // prevArrow: "../assets/arrow-left-334.svg",
+  //   };
 
   return (
     <section className="complexes">
