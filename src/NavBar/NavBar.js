@@ -4,6 +4,7 @@ import verticalLogo from "../assets/logo.PNG";
 import "./NavBar.css";
 import phoneIcon from "../assets/phone-svgrepo-com.svg";
 import emailIcon from "../assets/mail-svgrepo-com.svg";
+import logo from "../assets/LogoColorTextRight.jpeg";
 
 const NavBar = () => {
   const openEmail = () => {
@@ -16,7 +17,7 @@ const NavBar = () => {
           <img
             className="horizontal-logo"
             src={horizontalLogo}
-            alt="uptown apartments image"
+            alt="uptown apartments logo"
           />
           <img
             className="vertical-logo"

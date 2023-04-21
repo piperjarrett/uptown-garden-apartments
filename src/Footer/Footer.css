@@ -4,6 +4,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #cb957c;
+    flex-wrap: wrap;
 
 }
 
@@ -12,10 +13,17 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
+    align-items: center;
+}
+
+.footer-img {
+    height: 20vh;
+    width: 15vh;
 }

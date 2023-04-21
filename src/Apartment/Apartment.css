@@ -1,5 +1,6 @@
 .ind-apartment-info {
-    background: #efe1d8;
+    background: #cb957c;
+    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -9,6 +10,7 @@
     padding-left: 5rem;
     padding-top: 3rem;
     opacity: .8;
+    margin-left: 2rem;
 }
 
  .rent-price {
@@ -25,13 +27,17 @@
     opacity: .8; */
     /* background: rgba(244,244,244,1);
      */
-     background-color: #efe1d8
+     background-color: #f4f4f4;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     flex-wrap: wrap;
 }
 
 .header-rent-price {
     margin-top: 0rem;
-    background: #efe1d8;
-    /* width: 25rem; */
+    background: #cb957c;
+    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
     height: 2rem;  
     margin-left: 2rem;
     display: flex;
@@ -52,10 +58,11 @@
 
 button {
     padding: 1rem;
-    background: #db8342;
+    background: lightblue;
     border: none;
     margin: 0.5rem;
     width: 8rem;
+    box-shadow: 0px 8px 8px 0px rgb(186, 183, 183);
 }
 
 button:hover {
@@ -67,13 +74,12 @@ button:hover {
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 8%;
-    margin-left: 2rem;
     flex-wrap: wrap;
 }
 
 .ind-apartment-bottom {
     /* background: rgba(244,244,244,1); */
-    background-color: #efe1d8;
+    background-color: #f4f4f4;
     margin: 0rem;
     padding: 1rem;
     width: 100%;
@@ -92,7 +98,7 @@ button:hover {
 .apartment-layout {
     width: 30vw;
     margin: 2rem;
-    background-color: #efe1d8;
+    background-color: #f4f4f4;
 }
 
 .amentities-paragraphs {
