@@ -2,7 +2,7 @@
 
 .complexes {
     background:#f4f4f4 ;
-    /* padding: 1rem; */
+    padding: 1rem;
 }
 
 .complex-info {
@@ -17,6 +17,8 @@
     align-items: center;
     justify-content: center;
     color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .complex-apartments-wrapper {
     display: flex;
