@@ -4,6 +4,7 @@ import verticalLogo from "../assets/logo.PNG";
 import "./NavBar.css";
 import phoneIcon from "../assets/phone-svgrepo-com.svg";
 import emailIcon from "../assets/mail-svgrepo-com.svg";
+import logo from "../assets/LogoColorTextRight.jpeg";
 
 const NavBar = () => {
   const openEmail = () => {

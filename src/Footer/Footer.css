@@ -20,4 +20,10 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
+    align-items: center;
+}
+
+.footer-img {
+    height: 20vh;
+    width: 15vh;
 }
