@@ -6,7 +6,6 @@
 }
 
 .complex-info {
-    
     display: flex;
     padding: 1rem;
     justify-content: space-around;
@@ -42,6 +41,11 @@
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 1rem;
+}
+.swiper-paragraph {
+    background: white;
+    opacity: .8;
+    color: black;
 }
 
 .complex-apartment-div:hover {

@@ -2,7 +2,8 @@ import "./Apartment.css";
 import layout from "../assets/layout.png";
 import { useEffect } from "react";
 
-const Apartment = () => {
+const Apartment = ({ apartment }) => {
+  console.log(apartment);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -29,7 +30,7 @@ const Apartment = () => {
         </div>
       </div>
       <div className="ind-apartment-bottom">
-        <img className="apartment-layout" src={layout} alt='apartment-layout'/>
+        <img className="apartment-layout" src={layout} alt="apartment-layout" />
         <div className="ind-apartment-ammentities">
           <h4>Ammentities</h4>
           <div className="amentities-paragraphs">

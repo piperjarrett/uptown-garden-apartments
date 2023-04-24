@@ -23,9 +23,10 @@ function App() {
       <Route path="/Marble">
         <Complexes />
       </Route>
-      <Route path="/2bed/1bath">
-        <Apartment />
-      </Route>
+      <Route
+        path="/:id/:id"
+        render={({ match }) => <Apartment apartment={match.params.id} />}
+      ></Route>
       <Route path="/location">
         <AboutLocation />
       </Route>

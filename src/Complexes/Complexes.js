@@ -11,30 +11,62 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { useEffect, useState } from "react";
+import complexRequest from "../apiCalls/apiCalls";
 
 const Complexes = () => {
-  //   const settings = {
-  //     dots: true,
-  //     infinite: true,
-  //     speed: 1000,
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     touchMove: true,
-  //     // nextArrow: "../assets/arrow-left-334.svg",
-  //     // prevArrow: "../assets/arrow-left-334.svg",
-  //   };
+  const [complex, setComplex] = useState({});
+  const [error, setError] = useState("");
+  useEffect(() => {
+    complexRequest(1)
+      .then((data) => setComplex(data))
+      .catch((err) => setError("There was an error"));
+  }, []);
 
-  return (
+  const apartments = complex ? (
+    complex.apartments?.map((apartment) => {
+      return (
+        <SwiperSlide className="swiper-slide">
+          <div
+            key={`${apartment.bathrooms}, ${apartment.bedrooms}`}
+            className="complex-apartment-div"
+            style={{
+              backgroundImage: `url(${apartment.photos.bedroom})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <NavLink
+              to={`${apartment.bedrooms}Bed/${apartment.bathrooms}Bath`}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              <p className="swiper-paragraph">
+                {apartment.bedrooms} Bed, {apartment.bathrooms} Bath
+              </p>
+            </NavLink>
+          </div>
+        </SwiperSlide>
+      );
+    })
+  ) : (
+    <p>one sec</p>
+  );
+
+  return error ? (
+    <div className="error-message">
+      <h3>Sorry an issue has occured</h3>
+    </div>
+  ) : (
     <section className="complexes">
       {/* <img src={apartmentComplex} alt="Penn Apartment Complex" /> */}
       <div
         className="heading-div"
         style={{
-          backgroundImage: `url(${apartmentComplex})`,
+          backgroundImage: `url(${complex.preview_photo})`,
           backgroundSize: "cover",
         }}
       >
-        <h2>Pennsylvania</h2>
+        {/* <h2>Pennsylvania</h2> */}
+        <h2>{complex.address}</h2>
       </div>
       <div className="complex-info">
         <div className="complex-overview">
@@ -59,7 +91,8 @@ const Complexes = () => {
             mousewheel={true}
             className="all-swiper-movies"
           >
-            <SwiperSlide className="swiper-slide">
+            {apartments}
+            {/* <SwiperSlide className="swiper-slide">
               <div
                 className="complex-apartment-div"
                 style={{
@@ -90,7 +123,7 @@ const Complexes = () => {
                   <p>3 Bed, 2 Bath</p>
                 </NavLink>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
 
