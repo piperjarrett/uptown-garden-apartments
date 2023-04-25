@@ -12,17 +12,17 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useEffect, useState } from "react";
-import complexRequest from "../apiCalls/apiCalls";
+import { complexRequest } from "../apiCalls/apiCalls";
 
 const Complexes = () => {
   const [complex, setComplex] = useState({});
   const [error, setError] = useState("");
   useEffect(() => {
-    complexRequest(1)
+    complexRequest(3)
       .then((data) => setComplex(data))
       .catch((err) => setError("There was an error"));
   }, []);
-
+  console.log(complex);
   const apartments = complex ? (
     complex.apartments?.map((apartment) => {
       return (
@@ -36,7 +36,7 @@ const Complexes = () => {
             }}
           >
             <NavLink
-              to={`${apartment.bedrooms}Bed/${apartment.bathrooms}Bath`}
+              to={`${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
               style={{ color: "inherit", textDecoration: "none" }}
             >
               <p className="swiper-paragraph">

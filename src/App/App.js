@@ -24,8 +24,8 @@ function App() {
         <Complexes />
       </Route>
       <Route
-        path="/:id/:id"
-        render={({ match }) => <Apartment apartment={match.params.id} />}
+        path="/:id/:id/:id"
+        render={({ match }) => <Apartment apartmentId={match.params.id} />}
       ></Route>
       <Route path="/location">
         <AboutLocation />
