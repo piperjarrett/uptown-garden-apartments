@@ -6,11 +6,7 @@
 }
 
 html {
-  background: url('../assets/complex-image.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #f4f4f4 ;
   
 }
 

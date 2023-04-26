@@ -30,19 +30,19 @@ const NavBar = () => {
         <p className="complex">Complexes</p>
         <div className="dropdown-content">
           <NavLink
-            to="/Pennsylvania"
+            to="/complex/Pennsylvania"
             style={{ color: "inherit", textDecoration: "none" }}
           >
             <p>Pennsylvania</p>
           </NavLink>
           <NavLink
-            to="/Dallas"
+            to="/complex/Dallas"
             style={{ color: "inherit", textDecoration: "none" }}
           >
             <p>Dallas</p>
           </NavLink>
           <NavLink
-            to="/Marble"
+            to="/complex/Marble"
             style={{ color: "inherit", textDecoration: "none" }}
           >
             <p>Marble</p>

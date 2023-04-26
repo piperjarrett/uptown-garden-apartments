@@ -5,6 +5,10 @@
 
 .location-education {
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.3rem solid #884d3b;
 }
 
 .college {
@@ -30,6 +34,13 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.about-location-top-p {
+    width: 30vw;
+    padding: 5rem;
+    background-color: #884d3b;
+    opacity: .6;
 }
 
 .about-location h2 {

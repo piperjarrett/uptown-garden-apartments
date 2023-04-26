@@ -11,40 +11,90 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { useEffect, useState } from "react";
+import { complexRequest } from "../apiCalls/apiCalls";
 
-const Complexes = () => {
-  //   const settings = {
-  //     dots: true,
-  //     infinite: true,
-  //     speed: 1000,
-  //     slidesToShow: 1,
-  //     slidesToScroll: 1,
-  //     touchMove: true,
-  //     // nextArrow: "../assets/arrow-left-334.svg",
-  //     // prevArrow: "../assets/arrow-left-334.svg",
-  //   };
+const Complexes = ({ complexName }) => {
+  console.log(complexName);
+  const [complex, setComplex] = useState({});
+  const [error, setError] = useState("");
+  useEffect(() => {
+    if (complexName === "Pennsylvania") {
+      complexRequest(1)
+        .then((data) => setComplex(data))
+        .catch((err) => setError("There was an error"));
+    } else if (complexName === "Marble") {
+      complexRequest(2)
+        .then((data) => setComplex(data))
+        .catch((err) => setError("There was an error"));
+    } else {
+      complexRequest(3)
+        .then((data) => setComplex(data))
+        .catch((err) => setError("There was an error"));
+    }
+  }, [complexName]);
+  console.log(complex);
+  const apartmentAmmentities = complex.ameneties
+    ?.split(".")
+    .map((ammentity) => {
+      console.log(ammentity);
+      return <p>{ammentity}</p>;
+    });
+  const apartments = complex ? (
+    complex.apartments?.map((apartment) => {
+      return (
+        <SwiperSlide className="swiper-slide">
+          <div
+            key={`${apartment.bathrooms}, ${apartment.bedrooms}`}
+            className="complex-apartment-div"
+            style={{
+              backgroundImage: `url(${apartment.photos.bedroom})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <NavLink
+              to={`/${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              <p className="swiper-paragraph">
+                {apartment.bedrooms} Bed, {apartment.bathrooms} Bath
+              </p>
+            </NavLink>
+          </div>
+        </SwiperSlide>
+      );
+    })
+  ) : (
+    <p>one sec</p>
+  );
 
-  return (
+  return error ? (
+    <div className="error-message">
+      <h3>Sorry an issue has occured</h3>
+    </div>
+  ) : (
     <section className="complexes">
       {/* <img src={apartmentComplex} alt="Penn Apartment Complex" /> */}
       <div
         className="heading-div"
         style={{
-          backgroundImage: `url(${apartmentComplex})`,
+          backgroundImage: `url(${complex.preview_photo})`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
-        <h2>Pennsylvania</h2>
+        {/* <h2>Pennsylvania</h2> */}
+        <h2>{complex.address}</h2>
       </div>
       <div className="complex-info">
         <div className="complex-overview">
           <h4>Overview</h4>
+          <p>{complex.description}</p>
         </div>
         <div className="apartment-features">
           <h4>Apartment Features</h4>
-          <p>Pool</p>
-          <p>Washer and dryer</p>
-          <p>Coin Laundry</p>
+          {apartmentAmmentities}
         </div>
       </div>
 
@@ -59,7 +109,8 @@ const Complexes = () => {
             mousewheel={true}
             className="all-swiper-movies"
           >
-            <SwiperSlide className="swiper-slide">
+            {apartments}
+            {/* <SwiperSlide className="swiper-slide">
               <div
                 className="complex-apartment-div"
                 style={{
@@ -90,7 +141,7 @@ const Complexes = () => {
                   <p>3 Bed, 2 Bath</p>
                 </NavLink>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
 

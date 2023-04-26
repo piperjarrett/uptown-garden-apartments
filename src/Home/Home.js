@@ -1,6 +1,7 @@
 import "./Home.css";
 import horizontalLogo from "../assets/IMG_5558.PNG";
 import verticalLogo from "../assets/logo.PNG";
+import complexImg from "../assets/complex-image.jpg";
 
 const Home = () => {
   const openMaps = () => {
@@ -10,7 +11,15 @@ const Home = () => {
   };
   return (
     <div className="home">
-      <div className="home-header">
+      <div
+        className="home-header"
+        style={{
+          backgroundImage: `url(${complexImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         {/* <img src={horizontalLogo} alt="apartment-logo" />
         <img src={verticalLogo} alt="apartment-logo" /> */}
         <h1>Uptown Garden Apartments</h1>
@@ -39,9 +48,10 @@ const Home = () => {
           <h2>About Uptown Garden Apartments</h2>
           <p className="about-paragraph">
             Welcome to Uptown Apartments Complex that is located in the Uptown
-            area of Albuqueuerque, New Mexico. Our complex boasts 78 spacious
-            units with private backyards that are perfect for singles, couples,
-            and families looking for a comfortable and convenient living space.
+            area of Albuqueuerque, New Mexico. Our complex made up of 78
+            spacious units with private backyards that are perfect for singles,
+            couples, and families looking for a comfortable and convenient
+            living space.
           </p>
         </div>
       </div>
