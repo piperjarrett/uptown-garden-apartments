@@ -1,7 +1,7 @@
 .home-header {
     display: flex;
     justify-content: flex-end;
-    margin: 3rem;
+    
 }
 h1 {
     background: #f4f4f4;
@@ -10,6 +10,7 @@ h1 {
     padding: 2rem;
     width: 60%;
     font-size: 5rem;
+    margin-right: 3rem;
 }
 
 .homepage-content-container {

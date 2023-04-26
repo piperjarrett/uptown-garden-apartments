@@ -19,6 +19,10 @@
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+.complex-overview, .apartment-features {
+    width: 40vw;
+}
 .complex-apartments-wrapper {
     display: flex;
     justify-content: center;

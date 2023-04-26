@@ -14,15 +14,16 @@ function App() {
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/Pennsylvania">
-        <Complexes />
-      </Route>
-      <Route path="/Dallas">
+      <Route
+        path="/complex/:id"
+        render={({ match }) => <Complexes complexName={match.params.id} />}
+      ></Route>
+      {/* <Route path="/Dallas">
         <Complexes />
       </Route>
       <Route path="/Marble">
         <Complexes />
-      </Route>
+      </Route> */}
       <Route
         path="/:id/:id/:id"
         render={({ match }) => <Apartment apartmentId={match.params.id} />}

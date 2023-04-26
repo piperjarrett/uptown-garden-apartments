@@ -14,15 +14,32 @@ import "swiper/css/scrollbar";
 import { useEffect, useState } from "react";
 import { complexRequest } from "../apiCalls/apiCalls";
 
-const Complexes = () => {
+const Complexes = ({ complexName }) => {
+  console.log(complexName);
   const [complex, setComplex] = useState({});
   const [error, setError] = useState("");
   useEffect(() => {
-    complexRequest(3)
-      .then((data) => setComplex(data))
-      .catch((err) => setError("There was an error"));
-  }, []);
+    if (complexName === "Pennsylvania") {
+      complexRequest(1)
+        .then((data) => setComplex(data))
+        .catch((err) => setError("There was an error"));
+    } else if (complexName === "Marble") {
+      complexRequest(2)
+        .then((data) => setComplex(data))
+        .catch((err) => setError("There was an error"));
+    } else {
+      complexRequest(3)
+        .then((data) => setComplex(data))
+        .catch((err) => setError("There was an error"));
+    }
+  }, [complexName]);
   console.log(complex);
+  const apartmentAmmentities = complex.ameneties
+    ?.split(".")
+    .map((ammentity) => {
+      console.log(ammentity);
+      return <p>{ammentity}</p>;
+    });
   const apartments = complex ? (
     complex.apartments?.map((apartment) => {
       return (
@@ -36,7 +53,7 @@ const Complexes = () => {
             }}
           >
             <NavLink
-              to={`${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
+              to={`/${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
               style={{ color: "inherit", textDecoration: "none" }}
             >
               <p className="swiper-paragraph">
@@ -63,6 +80,8 @@ const Complexes = () => {
         style={{
           backgroundImage: `url(${complex.preview_photo})`,
           backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {/* <h2>Pennsylvania</h2> */}
@@ -71,12 +90,11 @@ const Complexes = () => {
       <div className="complex-info">
         <div className="complex-overview">
           <h4>Overview</h4>
+          <p>{complex.description}</p>
         </div>
         <div className="apartment-features">
           <h4>Apartment Features</h4>
-          <p>Pool</p>
-          <p>Washer and dryer</p>
-          <p>Coin Laundry</p>
+          {apartmentAmmentities}
         </div>
       </div>
 
