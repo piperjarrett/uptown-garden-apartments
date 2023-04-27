@@ -6,14 +6,16 @@ const AboutLocation = () => {
     <div className="about-location">
       <div className="about-location-top">
         <h2>Nearby Uptown Garden Apartments</h2>
-        <p className="about-location-top-p">
-          The uptown Garden Apartments are located in a prime location in
-          Albuquerque's desireable Uptown area, just blocks from the 'Q',
-          Winrock and COrnado shopping and buisness centers. Take a stroll
-          through the charming neighboorhood to reach the Jerry Cline park and
-          tennis Center. COnvenientylu, severla bus lines are easily accessible
-          nearby Lomas, Wyoming, and Lousiana Streets.
-        </p>
+        <div className="about-location-top-div">
+          <p className="about-location-top-p">
+            The uptown Garden Apartments are located in a prime location in
+            Albuquerque's desireable Uptown area, just blocks from the 'Q',
+            Winrock and Cornado shopping and buisness centers. Take a stroll
+            through the charming neighboorhood to reach the Jerry Cline park and
+            tennis Center. Conveniently, several bus lines are easily accessible
+            nearby Lomas, Wyoming, and Lousiana Streets.
+          </p>
+        </div>
       </div>
       <div className="location-education">
         <h3>Education</h3>
