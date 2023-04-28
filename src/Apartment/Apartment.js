@@ -55,6 +55,8 @@ const Apartment = ({ apartmentId }) => {
             ) : (
               <h4>{apartment.floors} floors</h4>
             )}
+          </div>
+          <div>
             <img
               src={images}
               onClick={handleImageClick}

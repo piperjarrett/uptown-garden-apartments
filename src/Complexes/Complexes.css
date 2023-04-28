@@ -36,7 +36,7 @@
 }
 .complex-apartment-div {
     height: 30rem;
-    /* width: 25rem; */
+    width: 25rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -88,7 +88,3 @@
     width: 45vw;
   }
 
-  .modal-image {
-    height: 10vh;
-    width: 5vw;
-  }

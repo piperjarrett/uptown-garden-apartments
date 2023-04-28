@@ -7,8 +7,7 @@ import "swiper/css/scrollbar";
 import { SwiperSlide } from "swiper/react";
 import { Swiper } from "swiper/react";
 import "./ModalContent.css";
-import { Navigation, Keyboard, Scrollbar } from "swiper";
-import { Mousewheel } from "swiper";
+import { Navigation, Keyboard, Scrollbar, Mousewheel } from "swiper";
 
 const ModalContent = ({ apartmentImages }) => {
   console.log(apartmentImages);
@@ -27,7 +26,7 @@ const ModalContent = ({ apartmentImages }) => {
           modules={[Navigation, Mousewheel, Keyboard, Scrollbar]}
           slidesPerView={1}
           navigation={true}
-          scrollbar={{ draggable: true }}
+          //   scrollbar={{ draggable: true }}
           keyboard={true}
           mousewheel={true}
         >
