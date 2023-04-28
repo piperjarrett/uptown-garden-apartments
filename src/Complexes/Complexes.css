@@ -87,3 +87,8 @@
   .complex-apartments, .swiper-slide {
     width: 45vw;
   }
+
+  .modal-image {
+    height: 10vh;
+    width: 5vw;
+  }
