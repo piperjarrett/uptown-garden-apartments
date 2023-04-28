@@ -29,6 +29,8 @@ const Apartment = ({ apartmentId }) => {
           style={{
             backgroundImage: `url(${apartment.photos.living})`,
             backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div className="ind-apartment-info">
