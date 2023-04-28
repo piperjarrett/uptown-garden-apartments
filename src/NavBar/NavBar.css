@@ -118,6 +118,7 @@ justify-content: flex-start;}
       text-align: center;
       width: 100%;
       display: none;
+
     }
     .menu .dropdown {
       clear: right;
@@ -128,6 +129,7 @@ justify-content: flex-start;}
     #toggle:checked~.menu {
       display: block;
       margin: 1.5rem;
+      transition: all .5s ease;
     }
     .dropdown:hover .dropdown-content-contact  {
       position: relative;
