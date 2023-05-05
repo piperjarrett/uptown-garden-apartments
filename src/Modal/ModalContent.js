@@ -8,8 +8,9 @@ import { SwiperSlide } from "swiper/react";
 import { Swiper } from "swiper/react";
 import "./ModalContent.css";
 import { Navigation, Keyboard, Scrollbar, Mousewheel } from "swiper";
+import closeButton from "../assets/form-close.svg";
 
-const ModalContent = ({ apartmentImages }) => {
+const ModalContent = ({ apartmentImages, handleModalClose }) => {
   console.log(apartmentImages);
   const params = {
     pagination: {
@@ -20,6 +21,14 @@ const ModalContent = ({ apartmentImages }) => {
 
   return (
     <div className="swiper-container">
+      <div className="close-img-div">
+        <img
+          className="close-img"
+          src={closeButton}
+          alt="close button svg"
+          onClick={() => handleModalClose()}
+        />
+      </div>
       <div className="modal-images">
         <Swiper
           className="swiper-slide"

@@ -4,7 +4,9 @@ import images from "../assets/images.svg";
 import { useEffect, useState } from "react";
 import { apartmentRequest } from "../apiCalls/apiCalls";
 import ReactModal from "react-modal";
+import imagesIcon from "../assets/imagesIcon.png";
 import ModalContent from "../Modal/ModalContent";
+import closeButton from "../assets/form-close.svg";
 
 const Apartment = ({ apartmentId }) => {
   const [apartment, setApartment] = useState([]);
@@ -18,7 +20,7 @@ const Apartment = ({ apartmentId }) => {
 
     window.scrollTo(0, 0);
   }, []);
-
+  console.log(apartment);
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };
@@ -39,7 +41,7 @@ const Apartment = ({ apartmentId }) => {
         <div
           className="background-image"
           style={{
-            backgroundImage: `url(${apartment.photos.living})`,
+            backgroundImage: `url(${apartment.community_preview})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -58,12 +60,18 @@ const Apartment = ({ apartmentId }) => {
           </div>
           <div>
             <img
-              src={images}
+              src={imagesIcon}
               onClick={handleImageClick}
               className="modal-image"
             />
-            <ReactModal isOpen={isModalOpen} onRequestClose={handleModalClose}>
+            <ReactModal
+              className="react-modal"
+              isOpen={isModalOpen}
+              onRequestClose={handleModalClose}
+              ariaHideApp={false}
+            >
               <ModalContent
+                handleModalClose={handleModalClose}
                 apartmentImages={Object.keys(apartment.photos).map((key) => {
                   return apartment.photos[key];
                 })}

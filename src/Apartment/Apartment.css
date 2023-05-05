@@ -110,3 +110,10 @@ button:hover {
     margin-bottom: 1rem;
 
   }
+  .modal-image:hover {
+    cursor: pointer
+  }
+
+/* .react-modal {
+   
+  } */

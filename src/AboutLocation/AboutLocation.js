@@ -8,7 +8,7 @@ const AboutLocation = () => {
         <h2>Nearby Uptown Garden Apartments</h2>
         <div className="about-location-top-div">
           <p className="about-location-top-p">
-            The uptown Garden Apartments are located in a prime location in
+            The Uptown Garden Apartments are located in a prime location in
             Albuquerque's desireable Uptown area, just blocks from the 'Q',
             Winrock and Cornado shopping and buisness centers. Take a stroll
             through the charming neighboorhood to reach the Jerry Cline park and
