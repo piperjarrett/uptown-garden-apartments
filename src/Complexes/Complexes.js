@@ -3,7 +3,6 @@ import apartmentComplex from "../assets/complex-image.jpg";
 import "./Complexes.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import { Navigation, Keyboard, Scrollbar } from "swiper";
 import { Mousewheel } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";

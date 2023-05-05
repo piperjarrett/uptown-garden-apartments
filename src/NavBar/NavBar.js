@@ -27,7 +27,7 @@ const NavBar = () => {
           />
         </div>
       </NavLink>
-      <label for="toggle">&#9776;</label>
+      <label htmlFor="toggle">&#9776;</label>
       <input type="checkbox" id="toggle" />
       <div className="menu">
         <div className="dropdown">

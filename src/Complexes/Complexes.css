@@ -36,7 +36,7 @@
 }
 .complex-apartment-div {
     height: 30rem;
-    /* width: 25rem; */
+    width: 25rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -87,3 +87,4 @@
   .complex-apartments, .swiper-slide {
     width: 45vw;
   }
+
