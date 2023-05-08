@@ -1,6 +1,4 @@
 import "./Home.css";
-import horizontalLogo from "../assets/IMG_5558.PNG";
-import verticalLogo from "../assets/logo.PNG";
 import complexImg from "../assets/complex-image.jpg";
 
 const Home = () => {
@@ -20,8 +18,6 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {/* <img src={horizontalLogo} alt="apartment-logo" />
-        <img src={verticalLogo} alt="apartment-logo" /> */}
         <h1>Uptown Garden Apartments</h1>
       </div>
       <div className="homepage-content-container">
