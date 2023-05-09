@@ -21,18 +21,56 @@
     box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
 }
 
+.apartment-image {
+    width: 12vw;
+    height: 20vh;
+    border-radius: .5rem;
+}
+
+.ind-complex-apartment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem;
+    width: 35vw;
+    /* border: 1px solid #4f4f4f; */
+    border-radius: .5rem;
+    padding: 1rem;
+    height: 25vh;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 4px 0px rgb(186, 183, 183);
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:  767px) {
+    .ind-complex-apartment {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+    }
+   
+}
+
 .complex-overview, .apartment-features {
     width: 40vw;
 }
 .complex-apartments-wrapper {
     display: flex;
     justify-content: center;
-    background-color: #cb957c ;
+    /* background-color: #cb957c ; */
     /* width: 100%; */
     padding: 2rem;
     margin-bottom: 1rem;
-    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
+   
+    flex-wrap: wrap;
 
+}
+
+.complex-apartments {
+    background-color: #cb957c ;
+    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
+    padding: 2rem;
 }
 .complex-apartment-div {
     height: 30rem;
@@ -49,8 +87,8 @@
     margin-bottom: 1rem;
 }
 .swiper-paragraph {
-    background: white;
-    opacity: .8;
+    /* background: white;
+    opacity: .8; */
     color: black;
 }
 
@@ -84,7 +122,7 @@
     background: #884d3b !important;
   }
 
-  .complex-apartments, .swiper-slide {
+  /* .complex-apartments, .swiper-slide {
     width: 45vw;
-  }
+  } */
 

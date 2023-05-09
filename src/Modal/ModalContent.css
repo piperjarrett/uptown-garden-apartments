@@ -1,6 +1,6 @@
 .apartment-image-swiper {
-    width: 30rem;
-    height: 35rem;
+  width: 45vw;
+  height: 70vh;;
 
 }
 
@@ -30,7 +30,8 @@
     justify-content: center;
   }
 .swiper-wrapper {
-    width: 30rem;
+   width: 45vw;
+  
 }
   .swiper-button-next:before, .swiper-button-next:after  {
     color: #884d3b;
@@ -56,7 +57,15 @@
     justify-content: center;
     flex-direction: column;
   }
+.swiper-pagination {
+  --swiper-pagination-bullet-vertical-gap: 10rem !important;
+  --swiper-pagination-bullet-margin-top: 8px !important;
+  padding-bottom: 1rem;
+}
 
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+}
     /* transition : all 0.3s ease-in-out; */
   
   /* .swiper-button-prev:after {

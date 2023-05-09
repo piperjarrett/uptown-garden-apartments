@@ -42,25 +42,40 @@ const Complexes = ({ complexName }) => {
   const apartments = complex ? (
     complex.apartments?.map((apartment) => {
       return (
-        <SwiperSlide className="swiper-slide">
-          <div
-            key={`${apartment.bathrooms}, ${apartment.bedrooms}`}
-            className="complex-apartment-div"
-            style={{
-              backgroundImage: `url(${apartment.photos.bedroom})`,
-              backgroundSize: "cover",
-            }}
+        <div className="ind-complex-apartment">
+          <p className="swiper-paragraph">
+            {apartment.bedrooms} Bed, {apartment.bathrooms} Bath
+          </p>
+          <NavLink
+            to={`/${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
+            style={{ color: "inherit", textDecoration: "none" }}
           >
-            <NavLink
-              to={`/${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              <p className="swiper-paragraph">
-                {apartment.bedrooms} Bed, {apartment.bathrooms} Bath
-              </p>
-            </NavLink>
-          </div>
-        </SwiperSlide>
+            <img
+              src={apartment.photos.kitchen}
+              className="apartment-image"
+              alt="apartment kitchen"
+            />
+          </NavLink>
+        </div>
+        // <SwiperSlide className="swiper-slide">
+        //   <div
+        //     key={`${apartment.bathrooms}, ${apartment.bedrooms}`}
+        //     className="complex-apartment-div"
+        //     style={{
+        //       backgroundImage: `url(${apartment.photos.bedroom})`,
+        //       backgroundSize: "cover",
+        //     }}
+        //   >
+        //     <NavLink
+        //       to={`/${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
+        //       style={{ color: "inherit", textDecoration: "none" }}
+        //     >
+        //       <p className="swiper-paragraph">
+        //         {apartment.bedrooms} Bed, {apartment.bathrooms} Bath
+        //       </p>
+        //     </NavLink>
+        //   </div>
+        // </SwiperSlide>
       );
     })
   ) : (
@@ -96,9 +111,11 @@ const Complexes = ({ complexName }) => {
           {apartmentAmmentities}
         </div>
       </div>
-
-      <div className="complex-apartments-wrapper">
-        <div className="complex-apartments">
+      <div className="complex-apartments">
+        <h2>Apartments</h2>
+        <div className="complex-apartments-wrapper">
+          {apartments}
+          {/* <div className="complex-apartments">
           <Swiper
             modules={[Navigation, Mousewheel, Keyboard, Scrollbar]}
             slidesPerView={1}
@@ -141,10 +158,10 @@ const Complexes = ({ complexName }) => {
                 </NavLink>
               </div>
             </SwiperSlide> */}
-          </Swiper>
-        </div>
+          {/* </Swiper>
+        </div> */}
 
-        {/* <Slider {...settings}>
+          {/* <Slider {...settings}>
           <NavLink
             to="/2bed/1bath"
             style={{ color: "inherit", textDecoration: "none" }}
@@ -162,7 +179,8 @@ const Complexes = ({ complexName }) => {
           {/* <div>
             <h1>Hello</h1>
           </div> */}
-        {/* </Slider> */}
+          {/* </Slider> */}
+        </div>
       </div>
     </section>
   );

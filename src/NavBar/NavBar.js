@@ -6,11 +6,23 @@ import phoneIcon from "../assets/phone-svgrepo-com.svg";
 import emailIcon from "../assets/mail-svgrepo-com.svg";
 import logo from "../assets/LogoColorTextRight.jpeg";
 import calenderClock from "../assets/calendar-clock.svg";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [checked, setChecked] = useState(false);
+
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };
+
+  const changeCheck = () => {
+    if (checked === true) {
+      setChecked(false);
+    } else {
+      setChecked(true);
+    }
+  };
+
   return (
     <nav className="nav-bar">
       <NavLink to="/" style={{ color: "inherit", textDecoration: "none" }}>
@@ -28,7 +40,12 @@ const NavBar = () => {
         </div>
       </NavLink>
       <label htmlFor="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle" />
+      <input
+        type="checkbox"
+        id="toggle"
+        checked={checked}
+        onClick={() => changeCheck()}
+      />
       <div className="menu">
         <div className="dropdown">
           <p className="complex">Complexes</p>
@@ -37,19 +54,19 @@ const NavBar = () => {
               to="/complex/Pennsylvania"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <p>Pennsylvania</p>
+              <p onClick={checked ? () => changeCheck() : null}>Pennsylvania</p>
             </NavLink>
             <NavLink
               to="/complex/Dallas"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <p>Dallas</p>
+              <p onClick={checked ? () => changeCheck() : null}>Dallas</p>
             </NavLink>
             <NavLink
               to="/complex/Marble"
               style={{ color: "inherit", textDecoration: "none" }}
             >
-              <p>Marble</p>
+              <p onClick={checked ? () => changeCheck() : null}>Marble</p>
             </NavLink>
           </div>
         </div>
@@ -58,7 +75,12 @@ const NavBar = () => {
           to="/location"
           style={{ color: "inherit", textDecoration: "none" }}
         >
-          <p className="about-location-p">About The Location</p>
+          <p
+            className="about-location-p"
+            onClick={checked ? () => changeCheck() : null}
+          >
+            About The Location
+          </p>
         </NavLink>
         <div className="dropdown">
           <p>Contact Us</p>

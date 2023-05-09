@@ -12,7 +12,7 @@ const Apartment = ({ apartmentId }) => {
   const [apartment, setApartment] = useState([]);
   const [error, setError] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  console.log(apartmentId);
   useEffect(() => {
     apartmentRequest(apartmentId)
       .then((data) => setApartment(data))
@@ -81,7 +81,9 @@ const Apartment = ({ apartmentId }) => {
         </div>
         <div className="rent-price">
           <div className="price-and-modal">
-            <h4 className="header-rent-price">${apartment.rent}/month</h4>
+            <h4 className="header-rent-price">
+              ${apartment.rent}/month {apartmentId <= 4 ? " + utilities" : ""}
+            </h4>
           </div>
           <div className="ind-apartment-buttons">
             <a href={process.env.PUBLIC_URL + "/New Application.pdf"} download>
