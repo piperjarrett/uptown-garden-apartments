@@ -14,9 +14,9 @@ import { useEffect, useState } from "react";
 import { complexRequest } from "../apiCalls/apiCalls";
 
 const Complexes = ({ complexName }) => {
-  console.log(complexName);
   const [complex, setComplex] = useState({});
   const [error, setError] = useState("");
+
   useEffect(() => {
     if (complexName === "Pennsylvania") {
       complexRequest(1)
@@ -32,17 +32,17 @@ const Complexes = ({ complexName }) => {
         .catch((err) => setError("There was an error"));
     }
   }, [complexName]);
-  console.log(complex);
+
   const apartmentAmmentities = complex.ameneties
     ?.split(".")
     .map((ammentity) => {
-      console.log(ammentity);
-      return <p>{ammentity}</p>;
+      return <p key={ammentity}>{ammentity}</p>;
     });
+
   const apartments = complex ? (
     complex.apartments?.map((apartment) => {
       return (
-        <div className="ind-complex-apartment">
+        <div key={apartment.id} className="ind-complex-apartment">
           <p className="swiper-paragraph">
             {apartment.bedrooms} Bed, {apartment.bathrooms} Bath
           </p>

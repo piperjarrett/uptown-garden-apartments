@@ -12,7 +12,7 @@ const Apartment = ({ apartmentId }) => {
   const [apartment, setApartment] = useState([]);
   const [error, setError] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log(apartmentId);
+
   useEffect(() => {
     apartmentRequest(apartmentId)
       .then((data) => setApartment(data))
@@ -20,7 +20,7 @@ const Apartment = ({ apartmentId }) => {
 
     window.scrollTo(0, 0);
   }, []);
-  console.log(apartment);
+
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };

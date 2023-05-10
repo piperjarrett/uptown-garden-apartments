@@ -13,14 +13,11 @@ import {
   Keyboard,
   Scrollbar,
   Mousewheel,
-  thumbs,
   Pagination,
 } from "swiper";
 import closeButton from "../assets/form-close.svg";
 
 const ModalContent = ({ apartmentImages, handleModalClose }) => {
-  console.log(apartmentImages);
-
   return (
     <div className="swiper-container">
       <div className="close-img-div">
@@ -37,7 +34,6 @@ const ModalContent = ({ apartmentImages, handleModalClose }) => {
           modules={[Navigation, Mousewheel, Keyboard, Scrollbar, Pagination]}
           slidesPerView={1}
           navigation={true}
-          //   scrollbar={{ draggable: true }}
           keyboard={true}
           mousewheel={true}
           pagination={{
@@ -50,8 +46,8 @@ const ModalContent = ({ apartmentImages, handleModalClose }) => {
           // }}
         >
           {apartmentImages.map((image, index) => (
-            <SwiperSlide>
-              <div key={index} className="modal-swiper-div">
+            <SwiperSlide key={index}>
+              <div className="modal-swiper-div">
                 <img
                   className="apartment-image-swiper"
                   src={image}

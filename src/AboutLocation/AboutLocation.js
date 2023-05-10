@@ -5,7 +5,7 @@ const AboutLocation = () => {
   return (
     <div className="about-location">
       <div className="about-location-top">
-        <h2>Nearby Uptown Garden Apartments</h2>
+        <h2>Uptown Garden Apartments Location</h2>
         <div className="about-location-top-div">
           <p className="about-location-top-p">
             The Uptown Garden Apartments are located in a prime location in

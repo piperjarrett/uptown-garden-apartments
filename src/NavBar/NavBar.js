@@ -44,7 +44,7 @@ const NavBar = () => {
         type="checkbox"
         id="toggle"
         checked={checked}
-        onClick={() => changeCheck()}
+        onChange={() => changeCheck()}
       />
       <div className="menu">
         <div className="dropdown">
