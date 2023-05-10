@@ -1,14 +1,24 @@
 .ind-apartment-info {
-    background: #cb957c;
-    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
+    /* background: #cb957c; */
+    /* box-shadow: 0px 8px 16px 0px rgb(186, 183, 183); */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
     width: 30vw;
     /* height: 60vh; */
     padding: 2rem;
     opacity: .8;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
+}
+.apartment-details {
+    display: flex;
+}
+
+.apartment-details h4 {
+    border-right: solid 1px black;
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
 }
 .background-image {
     display: flex;
@@ -45,6 +55,13 @@
     display: flex;
     justify-content: flex-end;
     margin: 2rem;
+    display: flex;
+    width: 30vw;
+    /* justify-content: flex-end; */
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
@@ -53,8 +70,9 @@ button {
     background: lightblue;
     border: none;
     margin: 0.5rem;
-    width: 8rem;
-    box-shadow: 0px 8px 8px 0px rgb(186, 183, 183);
+    /* width: 8rem; */
+    width: 25vw;
+    /* box-shadow: 0px 8px 8px 0px rgb(186, 183, 183); */
 }
 
 button:hover {
@@ -62,10 +80,15 @@ button:hover {
 }
 
 .ind-apartment-top {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /* margin-top: 8%; */
+    /* margin-top: 8%;
+    flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
     flex-wrap: wrap;
 
 }
@@ -117,3 +140,129 @@ button:hover {
 /* .react-modal {
    
   } */
+
+
+  .apartment-image-swiper {
+    width: 45vw;
+    height: 70vh;;
+  
+  }
+  
+  .swiper-container {
+          display: flex;
+          justify-content: center;
+          /* background-color: #cb957c ; */
+          flex-direction: column;
+          /* margin-top: 5%; */
+          /* box-shadow: 0px 8px 16px 0px rgb(186, 183, 183); */
+  }
+  .modal-swiper-div {
+      
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      /* margin-left: 5rem;
+      margin-right: 5rem; */
+      margin-bottom: 1rem;
+  }
+  
+  .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  .swiper-wrapper {
+     width: 45vw;
+    
+  }
+    .swiper-button-next:before, .swiper-button-next:after  {
+      color: #884d3b;
+      background: white;
+      padding: 1rem;
+      border-radius: 4rem;
+      margin-right: 3rem;
+      width: 2vw;
+      height: 2vh;
+      /* width: 5vw; */
+  
+    }
+    .swiper-button-prev:after,  .swiper-button-prev:before {
+   color: #884d3b;
+   background: white;
+   padding: 1rem;
+   border-radius: 4rem;
+   margin-left: 3rem;
+      /* width: 5vw; */
+     
+    }
+  
+    .ReactModal__Content {
+      padding: 0rem !important;
+       border-color: none !important;
+      background: none !important;
+      /* width: 20rem; */
+      /* height: 20rem; */
+      --swiper-theme-color: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  .swiper-pagination {
+    --swiper-pagination-bullet-vertical-gap: 10rem !important;
+    --swiper-pagination-bullet-margin-top: 8px !important;
+    padding-bottom: 1rem;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+  }
+      /* transition : all 0.3s ease-in-out; */
+    
+    /* .swiper-button-prev:after {
+      position: fixed;
+      margin-right: 7rem;
+    }
+  
+    .swiper-button-next:after {
+      position: fixed;
+      margin-left: 7rem;
+    } */
+  .close-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+    .close-img {
+      width: 2rem;
+      margin-left: 2rem;
+    }
+  .close-img:hover {
+    cursor: pointer;
+  }
+    .ReactModal__Overlay {
+      opacity: 0;
+      transition: opacity 500ms ease-in-out;
+    
+  }
+  
+  .ReactModal__Overlay--after-open{
+      opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close{
+      opacity: 0;
+  }
+  
+  .modal-images {
+    width: 40rem;
+    /* padding-top: .1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem; */
+  }
+  :root {
+    --swiper-theme-color: none !important;
+  }
+  
