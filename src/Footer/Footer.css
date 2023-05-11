@@ -27,3 +27,7 @@ footer {
     height: 20vh;
     width: 15vh;
 }
+
+footer p {
+    font-weight: 300;
+}

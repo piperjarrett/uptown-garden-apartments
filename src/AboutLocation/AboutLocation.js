@@ -1,11 +1,12 @@
 import MapComponent from "../GoogleMap/MapComponent";
 import "./AboutLocation.css";
+import LocationCard from "../LocationCard/LocationCard";
 
 const AboutLocation = () => {
   return (
     <div className="about-location">
       <div className="about-location-top">
-        <h2>Uptown Garden Apartments Location</h2>
+        <h2>Explore the Neighboorhood</h2>
         <div className="about-location-top-div">
           <p className="about-location-top-p">
             The Uptown Garden Apartments are located in a prime location in
@@ -15,6 +16,14 @@ const AboutLocation = () => {
             tennis Center. Conveniently, several bus lines are easily accessible
             nearby Lomas, Wyoming, and Lousiana Streets.
           </p>
+        </div>
+      </div>
+      <div className="university">
+        <h4>Universities</h4>
+        <div className="university-location-cards">
+          <LocationCard />
+          <LocationCard />
+          <LocationCard />
         </div>
       </div>
       <div className="location-education">

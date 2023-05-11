@@ -1,0 +1,11 @@
+.MuiCardContent-root  {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+}
+
+.Card-Content {
+    display: flex ;
+    flex-direction: column ;
+    align-items: flex-start;
+}

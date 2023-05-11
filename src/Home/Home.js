@@ -18,7 +18,7 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h1>Uptown Garden Apartments</h1>
+        <h1>Home is Just a Lease Away</h1>
       </div>
       <div className="homepage-content-container">
         <div className="homepage-contact">

@@ -1,16 +1,17 @@
 .home-header {
     display: flex;
-    justify-content: flex-end;
-    
+    justify-content: flex-start;
+    height: 80vh;
+    align-items: center;
 }
 h1 {
-    background: #f4f4f4;
-    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
-    opacity: .8;
+   
     padding: 2rem;
     width: 60%;
-    font-size: 5rem;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 50px;
     margin-right: 3rem;
+    color: white;
 }
 
 .homepage-content-container {
@@ -21,8 +22,8 @@ h1 {
 .homepage-contact {
     display: flex;
     justify-content: space-around;
-    border-top: 0.3rem solid #884d3b;
-    border-bottom: 0.3rem solid #884d3b;
+    border-top: 1px solid #884d3b;
+    border-bottom: 1px solid #884d3b;
     padding: 1rem;
 }
 

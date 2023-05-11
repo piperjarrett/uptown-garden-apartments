@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 0.3rem solid #884d3b;
+    border-top: 1px solid #884d3b;
 }
 
 .college {
@@ -16,9 +16,13 @@
     align-items: center;
 }
 
+.college h4 {
+    padding-right: 4rem;
+}
+
 .location-public-schools {
-    border-top: 0.3rem solid #884d3b;
-    border-bottom: 0.3rem solid #884d3b;
+    border-top: 1px solid #884d3b;
+    border-bottom: 1px solid #884d3b;
    
     margin: 1rem;
      padding: 1rem;   
@@ -37,14 +41,16 @@
     flex-wrap: wrap;
 }
 
-.about-location-top-p {
+.about-location-top p {
+    font-size: 18px;
     width: 30vw;
     padding: 5rem;
     background: #884d3b;
     opacity: .8;
     box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
-   
 }
+
+
 /* .about-location-top-div {
    
 } */
@@ -71,4 +77,23 @@
 
 .attraction, .school, .get-to {
     width: 10rem;
+}
+
+.university-location-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.university {
+    text-align: left;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.university h4 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 1rem;
 }

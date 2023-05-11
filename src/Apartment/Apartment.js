@@ -61,7 +61,7 @@ const Apartment = ({ apartmentId }) => {
   ) : (
     <div className="ind-apartment">
       {/* <div> */}
-      <div className="breadcrumbs">
+      {/* <div className="breadcrumbs">
         <Breadcrumbs aria-label="breadcrumb" separator="›">
           <Link underline="hover" color="inherit" to="/">
             Home
@@ -78,7 +78,7 @@ const Apartment = ({ apartmentId }) => {
             {apartment.bedrooms} Bedrooms, {apartment.bathrooms} Bathrooms
           </Typography>
         </Breadcrumbs>
-      </div>
+      </div> */}
       {/* <ul className="navigation">
         <NavLink to="/">
           <li>Home</li>
@@ -203,14 +203,14 @@ const Apartment = ({ apartmentId }) => {
         {/* </div> */}
       </div>
       <div className="ind-apartment-bottom">
-        <img className="apartment-layout" src={layout} alt="apartment-layout" />
-        <div className="ind-apartment-ammentities">
-          <h4>Ammentities</h4>
-          <div className="amentities-paragraphs">
-            <p>Washer and dryer</p>
-            <p>Classic Finish</p>
-          </div>
+        {/* <img className="apartment-layout" src={layout} alt="apartment-layout" /> */}
+        {/* <div className="ind-apartment-ammentities"> */}
+        <h2>Ammentities</h2>
+        <div className="amentities-paragraphs">
+          <p>Washer and dryer</p>
+          <p>Classic Finish</p>
         </div>
+        {/* </div> */}
       </div>
     </div>
   );
