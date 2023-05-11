@@ -11,6 +11,14 @@
     opacity: .8;
     /* margin-left: 5rem; */
 }
+
+.ind-apartment-info h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
 .apartment-details {
     display: flex;
 }
@@ -88,10 +96,44 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     flex-wrap: wrap;
 
 }
+
+.navigation {
+    display: flex;
+    margin-top: 1;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 9vw;
+    margin-top: 10rem;
+}
+.breadcrumbs {
+    padding-left: 9rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    /* margin-top: 8rem; */
+}
+
+.MuiBreadcrumbs-separator {
+    color: #1876DB;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 4px 0;
+}
+li {
+    font-size: 12px
+}
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+}
+.breadcrumbs p {
+    font-size: 12px;
+    padding: 0 !important;
+}
+
 .background-image {
     width: 100%;
     padding-top: 8%;

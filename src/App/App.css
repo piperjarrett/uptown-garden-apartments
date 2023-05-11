@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin Slab");
 
 * {
-  font-family: "PT Sans", sans-serif;
-
+  /* font-family: "PT Sans", sans-serif; */
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
 html {

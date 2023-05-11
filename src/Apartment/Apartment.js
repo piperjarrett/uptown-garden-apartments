@@ -5,6 +5,10 @@ import { useEffect, useState } from "react";
 import { apartmentRequest } from "../apiCalls/apiCalls";
 import ReactModal from "react-modal";
 import imagesIcon from "../assets/imagesIcon.png";
+import { NavLink } from "react-router-dom";
+import { Breadcrumbs } from "@mui/material";
+import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -39,6 +43,7 @@ const Apartment = ({ apartmentId }) => {
   // const apartmentImages = Object.keys(apartment?.photos).map((key) => {
   //   return apartment.photos[key];
   // });
+
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };
@@ -55,6 +60,35 @@ const Apartment = ({ apartmentId }) => {
     </div>
   ) : (
     <div className="ind-apartment">
+      {/* <div> */}
+      <div className="breadcrumbs">
+        <Breadcrumbs aria-label="breadcrumb" separator="›">
+          <Link underline="hover" color="inherit" to="/">
+            Home
+          </Link>
+          <Link
+            // underline="hover"
+
+            color="inherit"
+            href="/material-ui/getting-started/installation/"
+          >
+            Penn
+          </Link>
+          <Typography color="text.primary">
+            {apartment.bedrooms} Bedrooms, {apartment.bathrooms} Bathrooms
+          </Typography>
+        </Breadcrumbs>
+      </div>
+      {/* <ul className="navigation">
+        <NavLink to="/">
+          <li>Home</li>
+        </NavLink>
+        <li>Penn</li>
+        <l1>
+          {apartment.bedrooms} Bedrooms, {apartment.bathrooms} Bathrooms
+        </l1>
+      </ul> */}
+      {/* </div> */}
       <div className="ind-apartment-top">
         <div className="swiper-container">
           <div className="modal-images">
