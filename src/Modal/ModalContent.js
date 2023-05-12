@@ -12,12 +12,7 @@ import closeButton from "../assets/form-close.svg";
 
 const ModalContent = ({ apartmentImages, handleModalClose }) => {
   console.log(apartmentImages);
-  const params = {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  };
+
 
   return (
     <div className="swiper-container">
@@ -45,7 +40,7 @@ const ModalContent = ({ apartmentImages, handleModalClose }) => {
                 <img
                   className="apartment-image-swiper"
                   src={image}
-                  alt={`Image ${index}`}
+                  alt={`apartment at ${index} index`}
                 />
               </div>
             </SwiperSlide>

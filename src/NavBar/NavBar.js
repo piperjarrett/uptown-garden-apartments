@@ -4,7 +4,6 @@ import verticalLogo from "../assets/logo.PNG";
 import "./NavBar.css";
 import phoneIcon from "../assets/phone-svgrepo-com.svg";
 import emailIcon from "../assets/mail-svgrepo-com.svg";
-import logo from "../assets/LogoColorTextRight.jpeg";
 import calenderClock from "../assets/calendar-clock.svg";
 
 const NavBar = () => {

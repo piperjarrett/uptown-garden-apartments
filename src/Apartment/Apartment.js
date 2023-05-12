@@ -1,16 +1,14 @@
 import "./Apartment.css";
 import layout from "../assets/layout.png";
-import images from "../assets/images.svg";
 import { useEffect, useState } from "react";
 import { apartmentRequest } from "../apiCalls/apiCalls";
 import ReactModal from "react-modal";
 import imagesIcon from "../assets/imagesIcon.png";
 import ModalContent from "../Modal/ModalContent";
-import closeButton from "../assets/form-close.svg";
 
 const Apartment = ({ apartmentId }) => {
   const [apartment, setApartment] = useState([]);
-  const [error, setError] = useState("");
+  const [_error, setError] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -19,7 +17,7 @@ const Apartment = ({ apartmentId }) => {
       .catch((err) => setError("There was an error"));
 
     window.scrollTo(0, 0);
-  }, []);
+  }, [apartmentId]);
   console.log(apartment);
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
@@ -60,6 +58,7 @@ const Apartment = ({ apartmentId }) => {
           </div>
           <div>
             <img
+              alt="stacked pictures"
               src={imagesIcon}
               onClick={handleImageClick}
               className="modal-image"

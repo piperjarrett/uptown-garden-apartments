@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import apartmentComplex from "../assets/complex-image.jpg";
 import "./Complexes.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
