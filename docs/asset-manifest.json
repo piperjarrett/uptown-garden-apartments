@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/uptown-garden-apartments/static/css/main.9c398818.css",
-    "main.js": "/uptown-garden-apartments/static/js/main.b0e9762f.js",
-    "static/js/787.3b7ab155.chunk.js": "/uptown-garden-apartments/static/js/787.3b7ab155.chunk.js",
-    "static/media/complex-image.jpg": "/uptown-garden-apartments/static/media/complex-image.96821966b32fe3918fcd.jpg",
-    "static/media/IMG_5558.PNG": "/uptown-garden-apartments/static/media/IMG_5558.53f79f7de119507c75f0.PNG",
-    "static/media/logo.PNG": "/uptown-garden-apartments/static/media/logo.b52158607eb88b07f4c1.PNG",
-    "static/media/slick.svg": "/uptown-garden-apartments/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/uptown-garden-apartments/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/uptown-garden-apartments/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/uptown-garden-apartments/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/uptown-garden-apartments/index.html",
-    "static/media/phone-svgrepo-com.svg": "/uptown-garden-apartments/static/media/phone-svgrepo-com.053c6f7f2494eb01b926b000d5c11f95.svg",
-    "static/media/calendar-clock.svg": "/uptown-garden-apartments/static/media/calendar-clock.f6ffa478ed0e8fc14cd93027789a6021.svg",
-    "static/media/mail-svgrepo-com.svg": "/uptown-garden-apartments/static/media/mail-svgrepo-com.0e35522e27d2a90ec68d671f04576561.svg",
-    "static/media/form-close.svg": "/uptown-garden-apartments/static/media/form-close.1c46d5734f89f32db1c8e7ec2b8542cd.svg",
-    "main.9c398818.css.map": "/uptown-garden-apartments/static/css/main.9c398818.css.map",
-    "main.b0e9762f.js.map": "/uptown-garden-apartments/static/js/main.b0e9762f.js.map",
-    "787.3b7ab155.chunk.js.map": "/uptown-garden-apartments/static/js/787.3b7ab155.chunk.js.map"
+    "main.css": "/static/css/main.e2a98356.css",
+    "main.js": "/static/js/main.da047ef0.js",
+    "static/js/787.3b7ab155.chunk.js": "/static/js/787.3b7ab155.chunk.js",
+    "static/media/complex-image.jpg": "/static/media/complex-image.96821966b32fe3918fcd.jpg",
+    "static/media/IMG_5558.PNG": "/static/media/IMG_5558.53f79f7de119507c75f0.PNG",
+    "static/media/logo.PNG": "/static/media/logo.b52158607eb88b07f4c1.PNG",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/phone-svgrepo-com.svg": "/static/media/phone-svgrepo-com.053c6f7f2494eb01b926b000d5c11f95.svg",
+    "index.html": "/index.html",
+    "static/media/calendar-clock.svg": "/static/media/calendar-clock.f6ffa478ed0e8fc14cd93027789a6021.svg",
+    "static/media/mail-svgrepo-com.svg": "/static/media/mail-svgrepo-com.0e35522e27d2a90ec68d671f04576561.svg",
+    "static/media/form-close.svg": "/static/media/form-close.1c46d5734f89f32db1c8e7ec2b8542cd.svg",
+    "main.e2a98356.css.map": "/static/css/main.e2a98356.css.map",
+    "main.da047ef0.js.map": "/static/js/main.da047ef0.js.map",
+    "787.3b7ab155.chunk.js.map": "/static/js/787.3b7ab155.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c398818.css",
-    "static/js/main.b0e9762f.js"
+    "static/css/main.e2a98356.css",
+    "static/js/main.da047ef0.js"
   ]
 }
