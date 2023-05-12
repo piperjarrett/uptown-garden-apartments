@@ -24,10 +24,10 @@ jobs:
       - name: Build
         run: npm run build
       name: Add CNAME file
-        run: echo "uptowngardensabq.com" > ./di/CNAME
+        run: echo "uptowngardensabq.com" > ./build/CNAME
       - name: Deploy to GitHub Pages
         run: |
-          cd dist
+          cd build
           git init
           git add -A
           git commit -m "Deploy to GitHub Pages"
