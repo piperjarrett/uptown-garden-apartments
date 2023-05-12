@@ -16,15 +16,48 @@ h1 {
 
 .homepage-content-container {
     background: #f4f4f4;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
+.homepage-middle, .homepage-bottom {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.homepage-middle  img {
+    /* width: 60%; */
+    width: 50vw;
+    height: 75vh;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.homepage-bottom img {
+    /* width: 50vw;
+    height: 75vh; */
+    box-sizing: border-box;
+    /* object-fit: cover; */
+    max-width:100%; height:auto
+}
+
+.div-photo {
+        width: 50vw;
+    height: 75vh;
+    box-sizing: border-box;
+}
+
 
 .homepage-contact {
     display: flex;
     justify-content: space-around;
-    border-top: 1px solid #884d3b;
-    border-bottom: 1px solid #884d3b;
+    /* border-top: 1px solid #884d3b;
+    border-bottom: 1px solid #884d3b; */
     padding: 1rem;
+   align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 75vh;
+    box-sizing: border-box;
 }
 
 .homepage-contact-info {
@@ -36,7 +69,10 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    justify-content: center;
+    width: 50vw;
+    height: 75vh;
+    box-sizing: border-box;
 }
 
 .about-paragraph {
