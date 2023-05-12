@@ -23,4 +23,6 @@ jobs:
         run: echo "uptowngardensabq.com" > ./build/CNAME
       - name: Deploy to GitHub Pages
         run: |
+          git add .
+          git commit -m 'deploy to pages'
           git subtree push --prefix build origin gh-pages
