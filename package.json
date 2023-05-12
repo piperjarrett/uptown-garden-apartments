@@ -18,7 +18,7 @@
     "swiper": "^9.2.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "/",
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "BUILD_PATH='./docs' react-scripts build",
