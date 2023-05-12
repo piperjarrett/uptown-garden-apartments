@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      -name: Configure Git
+      - name: Configure Git
         run: |
         git config --global user.name "Piper Jarrett"
         git config --global user.email "piper.monet01@gmail.com"
@@ -19,7 +19,7 @@ jobs:
           run: npm install
       - name: Build
         run: npm run build
-      name: Add CNAME file
+      - name: Add CNAME file
         run: echo "uptowngardensabq.com" > ./build/CNAME
       - name: Deploy to GitHub Pages
         run: |
