@@ -8,7 +8,7 @@ import ModalContent from "../Modal/ModalContent";
 
 const Apartment = ({ apartmentId }) => {
   const [apartment, setApartment] = useState([]);
-  const [_error, setError] = useState("");
+  const [error, setError] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Apartment = ({ apartmentId }) => {
   const handleModalClose = () => {
     setIsModalOpen(false);
   };
-
+  console.log(error);
   return apartment.length === 0 ? (
     <div>
       <h1>Loading...</h1>
