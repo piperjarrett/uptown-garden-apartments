@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: npm run build
       name: Add CNAME file
-        run: echo "uptowngardensabq.com" > ./dist/CNAME
+        run: echo "uptowngardensabq.com" > ./di/CNAME
       - name: Deploy to GitHub Pages
         run: |
           cd dist
