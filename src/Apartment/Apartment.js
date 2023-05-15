@@ -25,7 +25,7 @@ import {
   Mousewheel,
   Pagination,
 } from "swiper";
-import closeButton from "../assets/form-close.svg";
+
 
 const Apartment = ({ apartmentId }) => {
   const [apartment, setApartment] = useState([]);
@@ -146,6 +146,13 @@ const Apartment = ({ apartmentId }) => {
           }}
         > */}
         <div className="ind-apartment-info">
+        {/* {apartment.bedrooms === 1 && apartment.bathrooms === 1 ? (
+              <h4>{apartment.floors} Bedroom | {apartment.bathrooms} Bathroom</h4>
+            ) ? apartment.bedrooms === 1 (
+              <h4>{apartment.floors} Bedroom | {apartment.bathrooms} Bathrooms</h4>
+            ) : apartment.bathrooms === 1 (
+              <h4>{apartment.floors} Bedrooms | {apartment.bathrooms} Bathroom</h4>
+            )} */}
           <h2>
             {apartment.bedrooms} Bedrooms | {apartment.bathrooms} Bathrooms
           </h2>
