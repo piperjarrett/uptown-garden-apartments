@@ -54,9 +54,9 @@ const Home = () => {
         </div>
         <div className="homepage-bottom">
           <div className="about-info">
-            <h2>About Uptown Garden Apartments</h2>
+            <h2>Welcome To Uptown Garden Apartments</h2>
             <p className="about-paragraph">
-              Welcome to Uptown Apartments Complex that is located in the Uptown
+             Uptown Apartments Complex is located in the Uptown
               area of Albuqueuerque, New Mexico. Our complex made up of 78
               spacious units with private backyards that are perfect for
               singles, couples, and families looking for a comfortable and
