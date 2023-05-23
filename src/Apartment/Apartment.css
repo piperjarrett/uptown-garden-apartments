@@ -138,7 +138,7 @@ li {
 }
 
 .ind-apartment-bottom {
-    /* background: rgba(244,244,244,1); */
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -155,10 +155,7 @@ li {
     padding-right: 1rem;
 }
 
-/* .ind-apartment-ammentities {
-    border-top: .3rem solid #884d3b;
-    border-bottom: .3rem solid #884d3b;
-} */
+
 
 .apartment-layout {
     width: 30vw;
@@ -173,7 +170,6 @@ li {
     margin-top: 1rem;
 }
 .modal-image {
-    /* height: 5rem; */
     width: 3rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -183,9 +179,7 @@ li {
     cursor: pointer
   }
 
-/* .react-modal {
-   
-  } */
+
 
 
   .apartment-image-swiper {
@@ -314,3 +308,23 @@ li {
     --swiper-theme-color: none !important;
   }
   
+  @media only screen and (max-width:  1438px) {
+    .ind-apartment-info {
+      align-items: center;
+      border-bottom: 1px solid black;
+      width: 41vw;
+
+    }
+
+    .ind-apartment-bottom {
+      align-items: center;
+    }
+    .ind-apartment-top {
+      width: 100%;
+      align-items: center;
+    }
+    .swiper-container {
+      width: 100%;
+      align-items: center;
+    }
+  }

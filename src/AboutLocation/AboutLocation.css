@@ -93,3 +93,15 @@
     line-height: 30px;
     margin-bottom: 1rem;
 }
+
+@media only screen and (max-width:  779px) {
+    .university-location-cards {
+      justify-content: center;
+    }
+    .university {
+        text-align: center;
+    }
+    .MuiPaper-root  {
+        margin: 2rem;
+    }
+  }

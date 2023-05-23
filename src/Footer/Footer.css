@@ -31,3 +31,10 @@ footer {
 footer p {
     font-weight: 300;
 }
+
+@media only screen and (max-width:  555px) {
+    .footer-logo {
+
+      margin-left: 0px;
+    }
+}

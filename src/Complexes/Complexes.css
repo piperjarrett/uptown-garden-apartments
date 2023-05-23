@@ -10,6 +10,7 @@
     padding: 1rem;
     align-items: center;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
 }
 
 .complex-info h3 {
@@ -162,7 +163,14 @@
     background: #884d3b !important;
   }
 
-  /* .complex-apartments, .swiper-slide {
-    width: 45vw;
-  } */
+  @media only screen and (max-width:  555px) {
+    .css-1oqv2c0-MuiPaper-root-MuiCard-root {
+        height: fit-content;
+    }
+}
 
+@media only screen and (max-width:  770px) {
+  .complex-info {
+    flex-wrap: wrap;
+  }
+}
