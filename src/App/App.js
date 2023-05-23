@@ -19,12 +19,6 @@ function App() {
           path="/complex/:id"
           render={({ match }) => <Complexes complexName={match.params.id} />}
         ></Route>
-        {/* <Route path="/Dallas">
-        <Complexes />
-      </Route>
-      <Route path="/Marble">
-        <Complexes />
-      </Route> */}
         <Route
           path="/:id/:id/:id"
           render={({ match }) => <Apartment apartmentId={match.params.id} />}

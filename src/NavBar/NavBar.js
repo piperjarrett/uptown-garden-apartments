@@ -4,7 +4,6 @@ import verticalLogo from "../assets/logo.PNG";
 import "./NavBar.css";
 import phoneIcon from "../assets/phone-svgrepo-com.svg";
 import emailIcon from "../assets/mail-svgrepo-com.svg";
-import logo from "../assets/LogoColorTextRight.jpeg";
 import calenderClock from "../assets/calendar-clock.svg";
 import { useState } from "react";
 
@@ -22,7 +21,8 @@ const NavBar = () => {
       setChecked(true);
     }
   };
-
+  // onClick={checked ? () => changeCheck() : null}
+  console.log(checked);
   return (
     <nav className="nav-bar">
       <NavLink to="/" style={{ color: "inherit", textDecoration: "none" }}>
@@ -39,7 +39,7 @@ const NavBar = () => {
           />
         </div>
       </NavLink>
-      <label htmlFor="toggle">&#9776;</label>
+      <label for="toggle">&#9776;</label>
       <input
         type="checkbox"
         id="toggle"
@@ -75,12 +75,7 @@ const NavBar = () => {
           to="/location"
           style={{ color: "inherit", textDecoration: "none" }}
         >
-          <p
-            className="about-location-p"
-            onClick={checked ? () => changeCheck() : null}
-          >
-            About The Location
-          </p>
+          <p className="about-location-p" onClick={checked ? () => changeCheck() : null}>About The Location</p>
         </NavLink>
         <div className="dropdown">
           <p>Contact Us</p>

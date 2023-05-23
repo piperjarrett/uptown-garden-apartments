@@ -45,15 +45,11 @@
     font-size: 18px;
     width: 30vw;
     padding: 5rem;
+    border-radius: 4px;
     background: #884d3b;
     opacity: .8;
     box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
 }
-
-
-/* .about-location-top-div {
-   
-} */
 
 
 .about-location h2 {

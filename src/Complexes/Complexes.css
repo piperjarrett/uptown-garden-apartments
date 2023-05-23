@@ -8,23 +8,63 @@
 .complex-info {
     display: flex;
     padding: 1rem;
+    align-items: center;
     justify-content: space-around;
+}
+
+.complex-info h3 {
+    color: white;
+    padding-bottom: 1rem;
 }
 .heading-div {
     height: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
     color: white;
     margin-left: 2rem;
     margin-right: 2rem;
     box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
 }
 
+.heading-div h2 {
+    font-size: 35px;
+}
+.apartment-wrapper {
+    background: #884d3b;
+    border-radius: 4px;
+    padding: 4rem;
+    width: 75vw;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    block-size: fit-content;
+    box-sizing: border-box;
+}
+
+.apartment-wrapper h3 {
+    font-size: 30px;
+
+}
+.apartments {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .apartment-image {
     width: 12vw;
     height: 20vh;
     border-radius: .5rem;
+}
+.css-1oqv2c0-MuiPaper-root-MuiCard-root {
+    display: flex;
+      width: fit-content;
+    align-items: center;
+    height: 20vh;
+    margin: 1rem;
+    overflow: hidden;
 }
 
 .ind-complex-apartment {

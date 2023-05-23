@@ -1,15 +1,6 @@
 import "./Apartment.css";
-import layout from "../assets/layout.png";
-import images from "../assets/images.svg";
 import { useEffect, useState } from "react";
 import { apartmentRequest } from "../apiCalls/apiCalls";
-import ReactModal from "react-modal";
-import imagesIcon from "../assets/imagesIcon.png";
-import { NavLink } from "react-router-dom";
-import { Breadcrumbs } from "@mui/material";
-import { Typography } from "@mui/material";
-import { Link } from "react-router-dom";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -17,7 +8,6 @@ import "swiper/css/scrollbar";
 import "swiper/swiper-bundle.min.css";
 import { SwiperSlide } from "swiper/react";
 import { Swiper } from "swiper/react";
-
 import {
   Navigation,
   Keyboard,
@@ -25,12 +15,10 @@ import {
   Mousewheel,
   Pagination,
 } from "swiper";
-import closeButton from "../assets/form-close.svg";
 
 const Apartment = ({ apartmentId }) => {
   const [apartment, setApartment] = useState([]);
   const [error, setError] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     apartmentRequest(apartmentId)
@@ -40,55 +28,20 @@ const Apartment = ({ apartmentId }) => {
     window.scrollTo(0, 0);
   }, []);
 
-  // const apartmentImages = Object.keys(apartment?.photos).map((key) => {
-  //   return apartment.photos[key];
-  // });
-
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
-  };
-  const handleImageClick = () => {
-    setIsModalOpen(true);
-  };
-  const handleModalClose = () => {
-    setIsModalOpen(false);
   };
 
   return apartment.length === 0 ? (
     <div>
       <h1>Loading...</h1>
     </div>
+  ) : error ? (
+    <div>
+      <h2>Sorry an error occured, please try again later</h2>
+    </div>
   ) : (
     <div className="ind-apartment">
-      {/* <div> */}
-      {/* <div className="breadcrumbs">
-        <Breadcrumbs aria-label="breadcrumb" separator="›">
-          <Link underline="hover" color="inherit" to="/">
-            Home
-          </Link>
-          <Link
-            // underline="hover"
-
-            color="inherit"
-            href="/material-ui/getting-started/installation/"
-          >
-            Penn
-          </Link>
-          <Typography color="text.primary">
-            {apartment.bedrooms} Bedrooms, {apartment.bathrooms} Bathrooms
-          </Typography>
-        </Breadcrumbs>
-      </div> */}
-      {/* <ul className="navigation">
-        <NavLink to="/">
-          <li>Home</li>
-        </NavLink>
-        <li>Penn</li>
-        <l1>
-          {apartment.bedrooms} Bedrooms, {apartment.bathrooms} Bathrooms
-        </l1>
-      </ul> */}
-      {/* </div> */}
       <div className="ind-apartment-top">
         <div className="swiper-container">
           <div className="modal-images">
@@ -112,10 +65,6 @@ const Apartment = ({ apartmentId }) => {
                 el: ".swiper-pagination",
                 clickable: true,
               }}
-              // navigation={{
-              //   nextEl: ".swiper-button-next",
-              //   prevEl: ".swiper-button-prev",
-              // }}
             >
               {Object.keys(apartment?.photos)
                 .map((key) => {
@@ -136,15 +85,6 @@ const Apartment = ({ apartmentId }) => {
             </Swiper>
           </div>
         </div>
-        {/* <div
-          className="background-image"
-          style={{
-            backgroundImage: `url(${apartment.community_preview})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        > */}
         <div className="ind-apartment-info">
           <h2>
             {apartment.bedrooms} Bedrooms | {apartment.bathrooms} Bathrooms
@@ -162,55 +102,18 @@ const Apartment = ({ apartmentId }) => {
           </div>
           <div className="ind-apartment-buttons">
             <a href={process.env.PUBLIC_URL + "/New Application.pdf"} download>
-              <button onClick={openEmail}>Download Application</button>
+              <button>Download Application</button>
             </a>
-            <button>Contact and Book a Tour</button>
+            <button onClick={openEmail}>Contact and Book a Tour</button>
           </div>
         </div>
-        {/* <div>
-            <img
-              src={imagesIcon}
-              onClick={handleImageClick}
-              className="modal-image"
-            />
-            <ReactModal
-              className="react-modal"
-              isOpen={isModalOpen}
-              onRequestClose={handleModalClose}
-              ariaHideApp={false}
-            >
-              <ModalContent
-                handleModalClose={handleModalClose}
-                apartmentImages={Object.keys(apartment.photos).map((key) => {
-                  return apartment.photos[key];
-                })}
-              />
-            </ReactModal>
-          </div> */}
-        {/* </div> */}
-        {/* <div className="rent-price"> */}
-        {/* <div className="price-and-modal"> */}
-        {/* <h4 className="header-rent-price">
-              ${apartment.rent}/month {apartmentId <= 4 ? " + utilities" : ""}
-            </h4>
-          </div> */}
-        {/* <div className="ind-apartment-buttons">
-            <a href={process.env.PUBLIC_URL + "/New Application.pdf"} download>
-              <button onClick={openEmail}>Download Application</button>
-            </a>
-            <button>Contact and Book a Tour</button>
-          </div> */}
-        {/* </div> */}
       </div>
       <div className="ind-apartment-bottom">
-        {/* <img className="apartment-layout" src={layout} alt="apartment-layout" /> */}
-        {/* <div className="ind-apartment-ammentities"> */}
         <h2>Ammentities</h2>
         <div className="amentities-paragraphs">
           <p>Washer and dryer</p>
           <p>Classic Finish</p>
         </div>
-        {/* </div> */}
       </div>
     </div>
   );
