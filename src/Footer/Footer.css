@@ -1,3 +1,4 @@
+
 footer {
     padding: 1rem;
     display: flex;
@@ -5,7 +6,6 @@ footer {
     justify-content: space-between;
     background-color: #cb957c;
     flex-wrap: wrap;
-
 }
 
 .footer-info {
@@ -26,4 +26,15 @@ footer {
 .footer-img {
     height: 20vh;
     width: 15vh;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+@media only screen and (max-width:  555px) {
+    .footer-logo {
+
+      margin-left: 0px;
+    }
 }

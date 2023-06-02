@@ -1,15 +1,36 @@
+.ind-apartment {
+    margin: 9rem;
+}
+
 .ind-apartment-info {
-    background: #cb957c;
-    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
+    /* background: #cb957c; */
+    /* box-shadow: 0px 8px 16px 0px rgb(186, 183, 183); */
     display: flex;
-    flex-direction: column;
+     flex-direction: column;
+    /* align-items: center; */
     align-items: flex-start;
-    width: 50vw;
+    width: 30vw;
     /* height: 60vh; */
-    padding-left: 5rem;
-    padding-top: 8%;
+    padding: 2rem;
     opacity: .8;
-    margin-left: 2rem;
+    /* margin-left: 5rem; */
+}
+
+.ind-apartment-info h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.apartment-details {
+    display: flex;
+}
+
+.apartment-details h4 {
+    border-right: solid 1px black;
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
 }
 .background-image {
     display: flex;
@@ -28,23 +49,27 @@
 .header-rent-price {
     margin-top: 0rem;
     background: #cb957c;
-    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
-    height: 2rem;  
-    margin-left: 2rem;
+    box-shadow: 0px 8px 16px 0px rgb(186 183 183);
+    height: 2rem;
+    margin-left: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    padding-left: 5rem;
-    padding-bottom: 3rem;
+
+    padding: 2rem;
+
     opacity: .8;
-    width: 50vw;
+    width: 30vw;
     margin-bottom: 0;
 }
 .ind-apartment-buttons {
+
     display: flex;
-    justify-content: flex-end;
-    margin: 2rem;
+
+    flex-direction: column;
+    align-items: flex-start;
+
 
 }
 
@@ -53,8 +78,9 @@ button {
     background: lightblue;
     border: none;
     margin: 0.5rem;
-    width: 8rem;
-    box-shadow: 0px 8px 8px 0px rgb(186, 183, 183);
+    /* width: 8rem; */
+    width: 25vw;
+    /* box-shadow: 0px 8px 8px 0px rgb(186, 183, 183); */
 }
 
 button:hover {
@@ -62,35 +88,74 @@ button:hover {
 }
 
 .ind-apartment-top {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    /* margin-top: 8%; */
+    /* margin-top: 8%;
+    flex-wrap: wrap; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5%; */
     flex-wrap: wrap;
 
 }
+
+.navigation {
+    display: flex;
+    margin-top: 1;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 9vw;
+    margin-top: 10rem;
+}
+.breadcrumbs {
+    padding-bottom: 1rem;
+}
+
+.MuiBreadcrumbs-separator {
+    color:#884d3b;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 6px 4px 0;
+    line-height: 10px;
+}
+li {
+    font-size: 12px
+}
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+}
+.breadcrumbs p {
+    font-size: 12px;
+    padding: 0 !important;
+}
+
 .background-image {
     width: 100%;
     padding-top: 8%;
 }
 
 .ind-apartment-bottom {
-    /* background: rgba(244,244,244,1); */
-    background-color: #f4f4f4;
-    margin: 0rem;
-    padding: 1rem;
-    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ind-apartment-bottom h2 {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 8px;
 }
 
 .ind-apartment-bottom, p {
-    margin: 0;
-    padding: 1rem;
+
+    padding-right: 1rem;
 }
 
-.ind-apartment-ammentities {
-    border-top: .3rem solid #884d3b;
-    border-bottom: .3rem solid #884d3b;
-}
+
 
 .apartment-layout {
     width: 30vw;
@@ -100,11 +165,11 @@ button:hover {
 
 .amentities-paragraphs {
     display: flex;
-    justify-content: space-evenly;
-    margin: 2rem;
+    width: 45vw;
+    justify-content: space-around;
+    margin-top: 1rem;
 }
 .modal-image {
-    /* height: 5rem; */
     width: 3rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -114,6 +179,152 @@ button:hover {
     cursor: pointer
   }
 
-/* .react-modal {
-   
-  } */
+
+
+
+  .apartment-image-swiper {
+    width: 45vw;
+    height: 70vh;;
+  
+  }
+  
+  .swiper-container {
+          display: flex;
+          justify-content: center;
+          /* background-color: #cb957c ; */
+          flex-direction: column;
+          border-bottom: 1px solid black;
+          padding-bottom: 3rem;
+          /* margin-top: 5%; */
+          /* box-shadow: 0px 8px 16px 0px rgb(186, 183, 183); */
+  }
+  .modal-swiper-div {
+      
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      /* margin-left: 5rem;
+      margin-right: 5rem; */
+      margin-bottom: 1rem;
+  }
+  
+  .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+  .swiper-wrapper {
+     width: 45vw;
+    
+  }
+    .swiper-button-next:before, .swiper-button-next:after  {
+      color: #884d3b;
+      background: white;
+      padding: 1rem;
+      border-radius: 4rem;
+      margin-right: 3rem;
+      width: 2vw;
+      height: 2vh;
+      /* width: 5vw; */
+  
+    }
+    .swiper-button-prev:after,  .swiper-button-prev:before {
+   color: #884d3b;
+   background: white;
+   padding: 1rem;
+   border-radius: 4rem;
+   margin-left: 3rem;
+      /* width: 5vw; */
+     
+    }
+  
+    .ReactModal__Content {
+      padding: 0rem !important;
+       border-color: none !important;
+      background: none !important;
+      /* width: 20rem; */
+      /* height: 20rem; */
+      --swiper-theme-color: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  .swiper-pagination {
+    --swiper-pagination-bullet-vertical-gap: 10rem !important;
+    --swiper-pagination-bullet-margin-top: 8px !important;
+    padding-bottom: 1rem;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+  }
+      /* transition : all 0.3s ease-in-out; */
+    
+    /* .swiper-button-prev:after {
+      position: fixed;
+      margin-right: 7rem;
+    }
+  
+    .swiper-button-next:after {
+      position: fixed;
+      margin-left: 7rem;
+    } */
+  .close-img-div {
+    display: flex;
+    justify-content: flex-end;
+  }
+    .close-img {
+      width: 2rem;
+      margin-left: 2rem;
+    }
+  .close-img:hover {
+    cursor: pointer;
+  }
+    .ReactModal__Overlay {
+      opacity: 0;
+      transition: opacity 500ms ease-in-out;
+    
+  }
+  
+  .ReactModal__Overlay--after-open{
+      opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close{
+      opacity: 0;
+  }
+  
+  .modal-images {
+    width: 40rem;
+    /* padding-top: .1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem; */
+  }
+  :root {
+    --swiper-theme-color: none !important;
+  }
+  
+  @media only screen and (max-width:  1438px) {
+    .ind-apartment-info {
+      align-items: center;
+      border-bottom: 1px solid black;
+      width: 41vw;
+
+    }
+
+    .ind-apartment-bottom {
+      align-items: center;
+    }
+    .ind-apartment-top {
+      width: 100%;
+      align-items: center;
+    }
+    .swiper-container {
+      width: 100%;
+      align-items: center;
+    }
+  }

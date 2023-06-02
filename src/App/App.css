@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin Slab");
 
 * {
-  font-family: "PT Sans", sans-serif;
-
+  /* font-family: "PT Sans", sans-serif; */
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -10,8 +10,17 @@ html {
   
 }
 
+
 .App {
   text-align: center;
+
+}
+.App p {
+  font-weight: 300;
+}
+.main {
+
+  margin-top: 5rem;
 }
 
 /* beige #efe1d8

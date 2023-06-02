@@ -1,5 +1,6 @@
 import "./Home.css";
 import complexImg from "../assets/complex-image.jpg";
+import unmPhoto from "../assets/unm-photo.jpg";
 
 const Home = () => {
   const openMaps = () => {
@@ -18,37 +19,59 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h1>Uptown Garden Apartments</h1>
+        <h1>Home is Just a Lease Away</h1>
       </div>
       <div className="homepage-content-container">
-        <div className="homepage-contact">
-          <div className="homepage-contact-info">
-            <h3>Visit our Office</h3>
-            <p onClick={openMaps} className="address">
-              1113 Pennslyvania NE
-            </p>
-            <p onClick={openMaps} className="address">
-              Albuqueuerque, NM. 87110
-            </p>
-          </div>
-          <div className="homepage-contact-info">
-            <h3>Let's Talk</h3>
-            <p>(505)-948-8299</p>
-          </div>
-          <div className="homepage-contact-info">
-            <h3>Email Us</h3>
-            <p>uptowngardensabq@gmail.com</p>
+        <div className="homepage-middle">
+          <div
+            className="div-photo"
+            style={{
+              backgroundImage: `url(${unmPhoto})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+          <div className="homepage-contact">
+            <div className="homepage-contact-info">
+              <h3>Visit our Office</h3>
+              <p onClick={openMaps} className="address">
+                1113 Pennslyvania NE
+              </p>
+              <p onClick={openMaps} className="address">
+                Albuqueuerque, NM. 87110
+              </p>
+            </div>
+            <div className="homepage-contact-info">
+              <h3>Let's Talk</h3>
+              <p>(505)-948-8299</p>
+            </div>
+            <div className="homepage-contact-info">
+              <h3>Email Us</h3>
+              <p>uptowngardensabq@gmail.com</p>
+            </div>
           </div>
         </div>
-        <div className="about-info">
-          <h2>About Uptown Garden Apartments</h2>
-          <p className="about-paragraph">
-            Welcome to Uptown Apartments Complex that is located in the Uptown
-            area of Albuqueuerque, New Mexico. Our complex made up of 78
-            spacious units with private backyards that are perfect for singles,
-            couples, and families looking for a comfortable and convenient
-            living space.
-          </p>
+        <div className="homepage-bottom">
+          <div className="about-info">
+            <h2>Welcome To Uptown Garden Apartments</h2>
+            <p className="about-paragraph">
+             Uptown Apartments Complex is located in the Uptown
+              area of Albuqueuerque, New Mexico. Our complex made up of 78
+              spacious units with private backyards that are perfect for
+              singles, couples, and families looking for a comfortable and
+              convenient living space.
+            </p>
+          </div>
+          <div
+            className="div-photo"
+            style={{
+              backgroundImage: `url(${unmPhoto})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
         </div>
       </div>
     </div>
