@@ -1,0 +1,28 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Configure Git
+        run: |
+          git config --global user.name "Piper Jarrett"
+          git config --global user.email "piper.monet01@gmail.com"
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Add CNAME file
+        run: echo "uptowngardensabq.com" > ./build/CNAME
+      # - name: Deploy to GitHub Pages
+      #   run: |
+      #     git add .
+      #     git commit -m 'deploy to pages'
+      #     git subtree push --prefix build git@github.com:piperjarrett/uptown-garden-apartments.git gh-pages
