@@ -27,7 +27,7 @@ const AboutLocation = () => {
             <LocationCard />
           </div>
         </div>
-        <div className="location-education">
+        {/* <div className="location-education">
           <h3>Education</h3>
           <div className="college">
             <h4>University of New Mexico</h4>
@@ -94,7 +94,7 @@ const AboutLocation = () => {
               <p>0.8 mi.</p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="google-map">
           <h3>On a Map</h3>
           <MapComponent />
