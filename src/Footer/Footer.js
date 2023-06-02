@@ -1,5 +1,4 @@
 import "./Footer.css";
-// import horizontalLogo from "../assets/LogoColorTextBelow.jpeg";
 import horizontalLogo from "../assets/IMG_5558.PNG";
 import verticalLogo from "../assets/logo.PNG";
 const Footer = () => {

@@ -8,17 +8,89 @@
 .complex-info {
     display: flex;
     padding: 1rem;
+    align-items: center;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
+}
+
+.complex-info h3 {
+    color: white;
+    padding-bottom: 1rem;
 }
 .heading-div {
     height: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
     color: white;
     margin-left: 2rem;
     margin-right: 2rem;
     box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
+}
+
+.heading-div h2 {
+    font-size: 35px;
+}
+.apartment-wrapper {
+    background: #884d3b;
+    border-radius: 4px;
+    padding: 4rem;
+    width: 75vw;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    block-size: fit-content;
+    box-sizing: border-box;
+}
+
+.apartment-wrapper h3 {
+    font-size: 30px;
+
+}
+.apartments {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.apartment-image {
+    width: 12vw;
+    height: 20vh;
+    border-radius: .5rem;
+}
+.css-1oqv2c0-MuiPaper-root-MuiCard-root {
+    display: flex;
+      width: fit-content;
+    align-items: center;
+    height: 20vh;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.ind-complex-apartment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem;
+    width: 35vw;
+    /* border: 1px solid #4f4f4f; */
+    border-radius: .5rem;
+    padding: 1rem;
+    height: 25vh;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 4px 0px rgb(186, 183, 183);
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:  767px) {
+    .ind-complex-apartment {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+    }
+   
 }
 
 .complex-overview, .apartment-features {
@@ -27,12 +99,19 @@
 .complex-apartments-wrapper {
     display: flex;
     justify-content: center;
-    background-color: #cb957c ;
+    /* background-color: #cb957c ; */
     /* width: 100%; */
     padding: 2rem;
     margin-bottom: 1rem;
-    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
+   
+    flex-wrap: wrap;
 
+}
+
+.complex-apartments {
+    background-color: #cb957c ;
+    box-shadow: 0px 8px 16px 0px rgb(186, 183, 183);
+    padding: 2rem;
 }
 .complex-apartment-div {
     height: 30rem;
@@ -49,8 +128,8 @@
     margin-bottom: 1rem;
 }
 .swiper-paragraph {
-    background: white;
-    opacity: .8;
+    /* background: white;
+    opacity: .8; */
     color: black;
 }
 
@@ -84,7 +163,14 @@
     background: #884d3b !important;
   }
 
-  .complex-apartments, .swiper-slide {
-    width: 45vw;
-  }
+  @media only screen and (max-width:  555px) {
+    .css-1oqv2c0-MuiPaper-root-MuiCard-root {
+        height: fit-content;
+    }
+}
 
+@media only screen and (max-width:  770px) {
+  .complex-info {
+    flex-wrap: wrap;
+  }
+}
