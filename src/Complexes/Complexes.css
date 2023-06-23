@@ -12,6 +12,20 @@
     justify-content: space-around;
     /* flex-wrap: wrap; */
 }
+.error-div {
+    padding: 8rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.error-div h2 {
+    width: 30vw;
+    padding: 5rem;
+    border-radius: 4px;
+    background: #884d3b
+
+}
 
 .complex-info h3 {
     color: white;
