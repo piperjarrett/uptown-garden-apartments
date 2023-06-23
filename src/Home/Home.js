@@ -1,6 +1,7 @@
 import "./Home.css";
 import complexImg from "../assets/complex-image.jpg";
 import unmPhoto from "../assets/unm-photo.jpg";
+import sandiaMountains from '../assets/sandiaMountains.jpg';
 
 const Home = () => {
   const openMaps = () => {
@@ -26,7 +27,7 @@ const Home = () => {
           <div
             className="div-photo"
             style={{
-              backgroundImage: `url(${unmPhoto})`,
+              backgroundImage: `url(${sandiaMountains})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",

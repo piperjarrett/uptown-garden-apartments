@@ -3,6 +3,7 @@ import "./Complexes.css";
 import { Card, Box, CardContent, Typography, CardMedia } from "@mui/material";
 import { useEffect, useState } from "react";
 import { complexRequest } from "../apiCalls/apiCalls";
+import warningImg from "../assets/warning.png";
 
 const Complexes = ({ complexName }) => {
   console.log(complexName);
@@ -67,7 +68,8 @@ const Complexes = ({ complexName }) => {
       <h1>Loading...</h1>
     </div>
   ) : error ? (
-    <div>
+    <div className="error-div">
+      <img src={warningImg} alt="error warning" />
       <h2>Sorry an error occured, please try again later</h2>
     </div>
   ) : (
