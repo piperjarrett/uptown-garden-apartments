@@ -81,13 +81,13 @@
     justify-content: space-between;
 }
 
-.university {
+.near-by-attraction {
     text-align: left;
     margin-left: 4rem;
     margin-right: 4rem;
 }
 
-.university h4 {
+.near-by-attraction h4 {
     font-size: 30px;
     font-weight: 300;
     line-height: 30px;
@@ -98,7 +98,7 @@
     .university-location-cards {
       justify-content: center;
     }
-    .university {
+    .near-by-attraction {
         text-align: center;
     }
     .MuiPaper-root  {

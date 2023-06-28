@@ -18,7 +18,7 @@ const Footer = () => {
           <h4>Leasing Office</h4>
           <p>1113 Pennslyvania NE</p>
           <p>Albuqueuerque, NM. 87110</p>
-          <p>Mon - Friday: 10am - 5pm</p>
+          <p>Monday - Friday: 10am - 5pm</p>
           <p>Sat: 2pm - 4pm</p>
         </div>
       </div>
