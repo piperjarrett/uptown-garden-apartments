@@ -1,7 +1,7 @@
 import "./Home.css";
-import complexImg from "../assets/complex-image.jpg";
-import unmPhoto from "../assets/unm-photo.jpg";
-import sandiaMountains from '../assets/sandiaMountains.jpg';
+import complexImg from "../assets/complex_preview.JPG";
+import backYard from "../assets/homepage_backyard.jpg";
+import leasingOffice from "../assets/leasing_office.JPG";
 
 const Home = () => {
   const openMaps = () => {
@@ -27,7 +27,7 @@ const Home = () => {
           <div
             className="div-photo"
             style={{
-              backgroundImage: `url(${sandiaMountains})`,
+              backgroundImage: `url(${leasingOffice})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -57,17 +57,17 @@ const Home = () => {
           <div className="about-info">
             <h2>Welcome To Uptown Garden Apartments</h2>
             <p className="about-paragraph">
-             Uptown Apartments Complex is located in the Uptown
-              area of Albuqueuerque, New Mexico. Our complex made up of 78
-              spacious units with private backyards that are perfect for
-              singles, couples, and families looking for a comfortable and
-              convenient living space.
+              Uptown Apartments Complex is located in the Uptown area of
+              Albuqueuerque, New Mexico. Our complex made up of 78 spacious
+              units with private backyards that are perfect for singles,
+              couples, and families looking for a comfortable and convenient
+              living space.
             </p>
           </div>
           <div
             className="div-photo"
             style={{
-              backgroundImage: `url(${unmPhoto})`,
+              backgroundImage: `url(${backYard})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
