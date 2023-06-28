@@ -1,33 +1,57 @@
 import MapComponent from "../MapComponent/MapComponent";
 import "./AboutLocation.css";
 import LocationCard from "../LocationCard/LocationCard";
+import { useEffect } from "react";
+import { aboutLocationRequest } from "../apiCalls/apiCalls";
+import { useState } from "react";
 
 const AboutLocation = () => {
+  const [aboutLocation, setAboutLocation] = useState([]);
+  const [err, setError] = useState([]);
+  useEffect(() => {
+    aboutLocationRequest()
+      .then((data) => setAboutLocation(data))
+      .catch((err) => setError("There was an error"));
+  }, []);
+  console.log(aboutLocation);
 
-    return (
-      <div className="about-location">
-        <div className="about-location-top">
-          <h2>Explore the Neighboorhood</h2>
-          <div className="about-location-top-div">
-            <p className="about-location-top-p">
-              The Uptown Garden Apartments are located in a prime location in
-              Albuquerque's desireable Uptown area, just blocks from the 'Q',
-              Winrock and Cornado shopping and buisness centers. Take a stroll
-              through the charming neighboorhood to reach the Jerry Cline park
-              and tennis Center. Conveniently, several bus lines are easily
-              accessible nearby Lomas, Wyoming, and Lousiana Streets.
-            </p>
-          </div>
+  console.log(Object.keys(aboutLocation));
+  // const aboutLocationCards = Object.keys(aboutLocation).map(
+  //   (aboutLocationKey) => {
+  //       const locationCards = aboutLocation[aboutLocationKey].map((detail) => {
+  //         return <LocationCard details={detail} />;
+  //       });
+  //     return (
+  //       <div className="near-by-attraction">
+  //         <h4>{aboutLocationKey}</h4>
+  //         <div className="university-location-cards">{locationCards}</div>
+  //       </div>
+  //     );
+  //   }
+  // );
+
+  return (
+    <div className="about-location">
+      <div className="about-location-top">
+        <h2>Explore the Neighboorhood</h2>
+        <div className="about-location-top-div">
+          <p className="about-location-top-p">
+            The Uptown Garden Apartments are located in a prime location in
+            Albuquerque's desireable Uptown area, just blocks from the 'Q',
+            Winrock and Cornado shopping and buisness centers. Take a stroll
+            through the charming neighboorhood to reach the Jerry Cline park and
+            tennis Center. Conveniently, several bus lines are easily accessible
+            nearby Lomas, Wyoming, and Lousiana Streets.
+          </p>
         </div>
-        <div className="university">
-          <h4>Universities</h4>
-          <div className="university-location-cards">
-            <LocationCard />
-            <LocationCard />
-            <LocationCard />
-          </div>
-        </div>
-        {/* <div className="location-education">
+      </div>
+
+      {/* {aboutLocationCards} */}
+      {/* <div className="university"> */}
+      {/* <h4>Universities</h4>
+        <div className="university-location-cards">{aboutLocationCards}</div> */}
+      {/* </div> */}
+      {/* <div className="location-education">
           <h3>Education</h3>
           <div className="college">
             <h4>University of New Mexico</h4>
@@ -95,13 +119,12 @@ const AboutLocation = () => {
             </div>
           </div>
         </div> */}
-        <div className="google-map">
-          <h3>On a Map</h3>
-          <MapComponent />
-        </div>
+      <div className="google-map">
+        <h3>On a Map</h3>
+        <MapComponent />
       </div>
-    );
-
+    </div>
+  );
 };
 
 export default AboutLocation;

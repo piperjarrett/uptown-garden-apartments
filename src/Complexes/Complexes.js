@@ -6,7 +6,6 @@ import { complexRequest } from "../apiCalls/apiCalls";
 import warningImg from "../assets/warning.png";
 
 const Complexes = ({ complexName }) => {
-  console.log(complexName);
   const [complex, setComplex] = useState({});
   const [error, setError] = useState("");
   useEffect(() => {
@@ -24,6 +23,7 @@ const Complexes = ({ complexName }) => {
         .catch((err) => setError("There was an error"));
     }
   }, [complexName]);
+
   console.log(complex);
 
   const apartments = complex.apartments?.map((apartment) => {

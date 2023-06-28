@@ -5,7 +5,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import unmPhoto from "../assets/unm-photo.jpg";
 
-const LocationCard = () => {
+const LocationCard = ({ details, name }) => {
+  console.log(name);
+  console.log(details);
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia sx={{ height: 140 }} image={unmPhoto} title="green iguana" />

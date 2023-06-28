@@ -32,6 +32,10 @@ const Apartment = ({ apartmentId }) => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };
 
+  const apartmentAmentities = apartment.ameneties?.split(".").map((amentity) => {
+      return <p>- {amentity}</p>;
+    });
+  console.log(apartment);
   return apartment.length === 0 ? (
     <div>
       <h1>Loading...</h1>
@@ -110,10 +114,7 @@ const Apartment = ({ apartmentId }) => {
       </div>
       <div className="ind-apartment-bottom">
         <h2>Ammentities</h2>
-        <div className="amentities-paragraphs">
-          <p>Washer and dryer</p>
-          <p>Classic Finish</p>
-        </div>
+        <div className="amentities-paragraphs">{apartmentAmentities}</div>
       </div>
     </div>
   );
