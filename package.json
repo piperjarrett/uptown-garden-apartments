@@ -21,7 +21,7 @@
     "swiper": "^9.2.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://uptowngardensabq.com/#",
+  "homepage": "https://uptowngardensabq.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "BUILD_PATH='./docs' react-scripts build",
