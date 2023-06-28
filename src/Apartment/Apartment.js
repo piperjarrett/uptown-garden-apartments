@@ -32,10 +32,16 @@ const Apartment = ({ apartmentId }) => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };
 
-  const apartmentAmentities = apartment.ameneties?.split(".").map((amentity) => {
-      return <p>- {amentity}</p>;
+  const apartmentAmentities = apartment.ameneties
+    ?.split(".")
+    .map((amentity) => {
+      if (amentity) {
+        return <p>- {amentity}</p>;
+      } else {
+        return null;
+      }
     });
-  console.log(apartment);
+
   return apartment.length === 0 ? (
     <div>
       <h1>Loading...</h1>

@@ -23,7 +23,7 @@ function App() {
           path="/:id/:id/:id"
           render={({ match }) => <Apartment apartmentId={match.params.id} />}
         ></Route>
-        <Route path="/location">
+        <Route exact path="/location">
           <AboutLocation />
         </Route>
         <Footer />

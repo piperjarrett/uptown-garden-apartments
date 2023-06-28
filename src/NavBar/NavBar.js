@@ -100,8 +100,8 @@ const NavBar = () => {
                 alt="calendar and clock icon"
                 className="calendar-clock-icon"
               />
-              <p className="hours-paragraph">Mon - Friday: 10am - 5pm</p>
-              <p className="hours-paragraph">Saturday: 2pm - 4pm</p>
+              <p className="hours-paragraph">Mon - Fri: 10am - 5pm</p>
+              <p className="hours-paragraph">Sat: 2pm - 4pm</p>
             </div>
           </div>
         </div>

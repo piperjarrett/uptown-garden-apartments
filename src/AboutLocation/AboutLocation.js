@@ -6,15 +6,15 @@ import { aboutLocationRequest } from "../apiCalls/apiCalls";
 import { useState } from "react";
 
 const AboutLocation = () => {
-  const [aboutLocation, setAboutLocation] = useState([]);
-  const [err, setError] = useState([]);
+  const [aboutLocation, setAboutLocation] = useState({});
+  const [error, setError] = useState("");
 
   useEffect(() => {
     aboutLocationRequest()
       .then((data) => setAboutLocation(data))
       .catch((err) => setError("There was an error"));
   }, []);
-
+  console.log(aboutLocation);
   const aboutLocationCards = Object.keys(aboutLocation).map(
     (aboutLocationKey, index) => {
       let keyToUpperCase;
@@ -41,7 +41,15 @@ const AboutLocation = () => {
     }
   );
 
-  return (
+  return aboutLocation === {} ? (
+    <div>
+      <h1>Loading...</h1>
+    </div>
+  ) : error ? (
+    <div>
+      <h2>Sorry an error occured, please try again later</h2>
+    </div>
+  ) : (
     <div className="about-location">
       <div className="about-location-top">
         <h2>Explore the Neighboorhood</h2>
