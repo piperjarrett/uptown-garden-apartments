@@ -5,21 +5,25 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import unmPhoto from "../assets/unm-photo.jpg";
 
-const LocationCard = ({ details, name }) => {
-  console.log(name);
-  console.log(details);
+const LocationCard = ({ details }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia sx={{ height: 140 }} image={unmPhoto} title="green iguana" />
-      <CardContent className="card-content">
-        <Typography gutterBottom variant="h5" component="div">
-          University of New Mexico
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          4.8 mi. | 10 minute drive
-        </Typography>
-      </CardContent>
-    </Card>
+    <div key={details.image}>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardMedia
+          sx={{ height: 140 }}
+          image={details.image}
+          title="green iguana"
+        />
+        <CardContent className="card-content">
+          <Typography gutterBottom variant="h5" component="div">
+            {details.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {details.distance} | {details.time} drive
+          </Typography>
+        </CardContent>
+      </Card>
+    </div>
   );
 };
 

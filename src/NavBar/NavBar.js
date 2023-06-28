@@ -21,8 +21,7 @@ const NavBar = () => {
       setChecked(true);
     }
   };
-  // onClick={checked ? () => changeCheck() : null}
-  console.log(checked);
+
   return (
     <nav className="nav-bar">
       <NavLink to="/" style={{ color: "inherit", textDecoration: "none" }}>
@@ -75,7 +74,12 @@ const NavBar = () => {
           to="/location"
           style={{ color: "inherit", textDecoration: "none" }}
         >
-          <p className="about-location-p" onClick={checked ? () => changeCheck() : null}>About The Location</p>
+          <p
+            className="about-location-p"
+            onClick={checked ? () => changeCheck() : null}
+          >
+            About The Location
+          </p>
         </NavLink>
         <div className="dropdown">
           <p>Contact Us</p>
