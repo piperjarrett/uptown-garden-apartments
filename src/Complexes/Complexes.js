@@ -24,7 +24,7 @@ const Complexes = ({ complexName }) => {
     }
   }, [complexName]);
 
-  console.log(complex);
+  console.log(complex.apartments);
 
   const apartments = complex.apartments?.map((apartment) => {
     return (
@@ -52,9 +52,10 @@ const Complexes = ({ complexName }) => {
               ></Box>
             </Box>
             <CardMedia
+              className="apartment-preview-picture"
               component="img"
-              sx={{ width: 151 }}
-              image={apartment.photos.kitchen}
+              // sx={{ width: 151, height: 151 }}
+              image={apartment.floorplan}
               alt="Live from space album cover"
             />
           </Card>

@@ -69,7 +69,6 @@
     justify-content: center;
 }
 .apartment-image {
-    width: 12vw;
     height: 20vh;
     border-radius: .5rem;
 }
@@ -80,6 +79,13 @@
     height: 20vh;
     margin: 1rem;
     overflow: hidden;
+    height: fit-content
+}
+
+.apartment-preview-picture {
+    width: 100px !important;
+    height: 120px;
+    object-fit: scale-down !important;
 }
 
 .ind-complex-apartment {
@@ -88,7 +94,6 @@
     justify-content: space-between;
     margin: 3rem;
     width: 35vw;
-    /* border: 1px solid #4f4f4f; */
     border-radius: .5rem;
     padding: 1rem;
     height: 25vh;
@@ -177,11 +182,13 @@
     background: #884d3b !important;
   }
 
-  @media only screen and (max-width:  555px) {
+  /* @media only screen and (max-width:  555px) {
     .css-1oqv2c0-MuiPaper-root-MuiCard-root {
-        height: fit-content;
-    }
-}
+        /* height: fit-content;
+         */
+         /* height: 30vh;
+    } */
+/* } */
 
 @media only screen and (max-width:  770px) {
   .complex-info {
