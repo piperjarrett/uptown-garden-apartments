@@ -14,6 +14,10 @@
 
 .css-1ri6ub7-MuiPaper-root-MuiCard-root {
     max-width: 250px !important;
-    /* max-height: 250px; */
+    height: 250px !important;
+}
+
+.css-w88nxk {
+    max-width: 250px !important;
     height: 250px !important;
 }
