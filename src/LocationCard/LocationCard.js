@@ -3,12 +3,12 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import unmPhoto from "../assets/unm-photo.jpg";
+import "./LocationCard.css";
 
 const LocationCard = ({ details }) => {
   return (
     <div key={details.image}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345 }} className="location-card">
         <CardMedia
           sx={{ height: 140 }}
           image={details.image}
