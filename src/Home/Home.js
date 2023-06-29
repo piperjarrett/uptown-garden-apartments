@@ -1,6 +1,6 @@
 import "./Home.css";
 import complexImg from "../assets/complex_preview.JPG";
-import backYard from "../assets/homepage_backyard.jpg";
+import courtyardImg from "../assets/homepage_courtyard.JPG";
 import leasingOffice from "../assets/leasing_office.JPG";
 
 const Home = () => {
@@ -67,7 +67,7 @@ const Home = () => {
           <div
             className="div-photo"
             style={{
-              backgroundImage: `url(${backYard})`,
+              backgroundImage: `url(${courtyardImg})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",

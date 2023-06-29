@@ -9,3 +9,11 @@
     flex-direction: column ;
     align-items: flex-start;
 }
+
+
+
+.css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    max-width: 250px !important;
+    /* max-height: 250px; */
+    height: 250px !important;
+}
