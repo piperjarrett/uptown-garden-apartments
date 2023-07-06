@@ -41,6 +41,7 @@ const Apartment = ({ apartmentId }) => {
         return null;
       }
     });
+    console.log(apartment)
 
   return apartment.length === 0 ? (
     <div>
@@ -52,6 +53,7 @@ const Apartment = ({ apartmentId }) => {
     </div>
   ) : (
     <div className="ind-apartment">
+      {/* <button>Back to {in}</button> */}
       <div className="ind-apartment-top">
         <div className="swiper-container">
           <div className="modal-images">
@@ -107,7 +109,7 @@ const Apartment = ({ apartmentId }) => {
               <h4>{apartment.floors} floors</h4>
             )}
             <h4>
-              ${apartment.rent}/month {apartmentId <= 4 ? " + utilities" : ""}
+              ${apartment.rent}/month {apartmentId <= 4 ? " + utilities" : "(utilities included)"}
             </h4>
           </div>
           <div className="ind-apartment-buttons">

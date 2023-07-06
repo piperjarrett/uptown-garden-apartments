@@ -1,5 +1,5 @@
 import "./Home.css";
-import complexImg from "../assets/complex_preview.JPG";
+import poolImg from "../assets/homepage_pool.jpeg";
 import courtyardImg from "../assets/homepage_courtyard.JPG";
 import leasingOffice from "../assets/leasing_office.JPG";
 
@@ -14,13 +14,13 @@ const Home = () => {
       <div
         className="home-header"
         style={{
-          backgroundImage: `url(${complexImg})`,
+          backgroundImage: `url(${poolImg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h1>Home is Just a Lease Away</h1>
+        <h1>Home is Just a Phone Call Away</h1>
       </div>
       <div className="homepage-content-container">
         <div className="homepage-middle">
@@ -57,9 +57,10 @@ const Home = () => {
           <div className="about-info">
             <h2>Welcome To Uptown Garden Apartments</h2>
             <p className="about-paragraph">
-              Uptown Apartments Complex is located in the Uptown area of
-              Albuqueuerque, New Mexico. Our complex made up of 78 spacious
-              units with private backyards that are perfect for singles,
+              Uptown Garden Apartments are located in the Uptown area of
+              Albuquerque, New Mexico. Our community is made up of three
+              separate complexes with a total of 78 spacious units. Each
+              equipped with private backyards that are perfect for singles,
               couples, and families looking for a comfortable and convenient
               living space.
             </p>

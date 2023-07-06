@@ -15,11 +15,18 @@ const LocationCard = ({ details }) => {
           title="green iguana"
         />
         <CardContent className="card-content">
-          <Typography gutterBottom variant="h5" component="div">
+        {/* {details.name === '' ?
+          ( */}
+          <Typography gutterBottom   variant='h8' component="div">
             {details.name}
           </Typography>
+           {/* ) 
+           : 
+           (<Typography gutterBottom   variant='h10' component="div">
+             {details.name}
+           </Typography> )} */}
           <Typography variant="body2" color="text.secondary">
-            {details.distance} | {details.time} drive
+            {details.distance} | {details.time}
           </Typography>
         </CardContent>
       </Card>

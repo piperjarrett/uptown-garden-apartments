@@ -4,6 +4,7 @@ import { Card, Box, CardContent, Typography, CardMedia } from "@mui/material";
 import { useEffect, useState } from "react";
 import { complexRequest } from "../apiCalls/apiCalls";
 import warningImg from "../assets/warning.png";
+import filler from "../assets/filler.jpeg";
 
 const Complexes = ({ complexName }) => {
   const [complex, setComplex] = useState({});
@@ -78,7 +79,8 @@ const Complexes = ({ complexName }) => {
       <div
         className="heading-div"
         style={{
-          backgroundImage: `url(${complex.preview_photo})`,
+          backgroundImage: `url(${filler})`,
+          // backgroundImage: `url(${complex.preview_photo})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
