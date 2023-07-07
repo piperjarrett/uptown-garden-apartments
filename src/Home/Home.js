@@ -20,7 +20,7 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h1>Home is Just a Phone Call Away</h1>
+        <h1>Unlock The Door To Your New Home Today</h1>
       </div>
       <div className="homepage-content-container">
         <div className="homepage-middle">
