@@ -15,13 +15,16 @@ import {
   Mousewheel,
   Pagination,
 } from "swiper";
+import { NavLink } from "react-router-dom";
+import leftArrow from "../assets/left-arrow.png";
 
-const Apartment = ({ apartmentId }) => {
+const Apartment = ({ apartmentMatch }) => {
+  console.log(apartmentMatch);
   const [apartment, setApartment] = useState([]);
   const [error, setError] = useState("");
 
   useEffect(() => {
-    apartmentRequest(apartmentId)
+    apartmentRequest(apartmentMatch.params.id)
       .then((data) => setApartment(data))
       .catch((err) => setError("There was an error"));
 
@@ -31,17 +34,18 @@ const Apartment = ({ apartmentId }) => {
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };
-
+  console.log(apartmentMatch);
   const apartmentAmentities = apartment.ameneties
     ?.split(".")
     .map((amentity) => {
       if (amentity) {
-        return <p>- {amentity}</p>;
+        return <li>{amentity}</li>;
       } else {
         return null;
       }
     });
-    console.log(apartment)
+
+  const apartmentsComplex = apartmentMatch.url.split("/")[1];
 
   return apartment.length === 0 ? (
     <div>
@@ -53,10 +57,18 @@ const Apartment = ({ apartmentId }) => {
     </div>
   ) : (
     <div className="ind-apartment">
-      {/* <button>Back to {in}</button> */}
+      <NavLink
+        to={`/complex/${apartmentsComplex}`}
+        style={{ color: "inherit", textDecoration: "none" }}
+      >
+        <button className="back-click">
+          <img src={leftArrow} alt="back arrow" className="back-arrow" />
+          <p>Back To {apartmentsComplex} Complex</p>
+        </button>
+      </NavLink>
       <div className="ind-apartment-top">
         <div className="swiper-container">
-          <div className="modal-images">
+          <div className="swiper-images">
             <Swiper
               className="swiper-slide"
               style={{
@@ -109,7 +121,10 @@ const Apartment = ({ apartmentId }) => {
               <h4>{apartment.floors} floors</h4>
             )}
             <h4>
-              ${apartment.rent}/month {apartmentId <= 4 ? " + utilities" : "(utilities included)"}
+              ${apartment.rent}/month{" "}
+              {apartmentMatch.params.id <= 4
+                ? " + utilities"
+                : "(utilities included)"}
             </h4>
           </div>
           <div className="ind-apartment-buttons">
@@ -122,7 +137,9 @@ const Apartment = ({ apartmentId }) => {
       </div>
       <div className="ind-apartment-bottom">
         <h2>Ammentities</h2>
-        <div className="amentities-paragraphs">{apartmentAmentities}</div>
+        {/* <div className="amentities-paragraphs"> */}
+        <ul>{apartmentAmentities}</ul>
+        {/* </div> */}
       </div>
     </div>
   );

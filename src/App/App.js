@@ -20,8 +20,8 @@ function App() {
           render={({ match }) => <Complexes complexName={match.params.id} />}
         ></Route>
         <Route
-          path="/:id/:id/:id"
-          render={({ match }) => <Apartment apartmentId={match.params.id} />}
+          path="/:id/:id/:id/:id"
+          render={({ match }) => <Apartment apartmentMatch={match} />}
         ></Route>
         <Route exact path="/location">
           <AboutLocation />

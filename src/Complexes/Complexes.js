@@ -4,7 +4,6 @@ import { Card, Box, CardContent, Typography, CardMedia } from "@mui/material";
 import { useEffect, useState } from "react";
 import { complexRequest } from "../apiCalls/apiCalls";
 import warningImg from "../assets/warning.png";
-import filler from "../assets/filler.jpeg";
 
 const Complexes = ({ complexName }) => {
   const [complex, setComplex] = useState({});
@@ -25,13 +24,13 @@ const Complexes = ({ complexName }) => {
     }
   }, [complexName]);
 
-  console.log(complex.apartments);
+  console.log(complexName);
 
   const apartments = complex.apartments?.map((apartment) => {
     return (
       <div className="complex-apartment" key={apartment.id}>
         <NavLink
-          to={`/${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
+          to={`/${complexName}/${apartment.bedrooms}Bed/${apartment.bathrooms}Bath/${apartment.id}`}
           style={{ color: "inherit", textDecoration: "none" }}
         >
           <Card sx={{ display: "flex" }}>
@@ -55,7 +54,6 @@ const Complexes = ({ complexName }) => {
             <CardMedia
               className="apartment-preview-picture"
               component="img"
-              // sx={{ width: 151, height: 151 }}
               image={apartment.floorplan}
               alt="Live from space album cover"
             />
@@ -79,8 +77,7 @@ const Complexes = ({ complexName }) => {
       <div
         className="heading-div"
         style={{
-          backgroundImage: `url(${filler})`,
-          // backgroundImage: `url(${complex.preview_photo})`,
+          backgroundImage: `url(${complex.preview_photo})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
