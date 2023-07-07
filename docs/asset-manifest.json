@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c47f64f5.css",
+    "main.css": "/static/css/main.90b829fc.css",
     "main.js": "/static/js/main.8e5ceb59.js",
     "static/js/787.3b7ab155.chunk.js": "/static/js/787.3b7ab155.chunk.js",
     "static/media/leasing_office.JPG": "/static/media/leasing_office.4145f6332988f9632099.JPG",
@@ -13,12 +13,12 @@
     "index.html": "/index.html",
     "static/media/calendar-clock.svg": "/static/media/calendar-clock.f6ffa478ed0e8fc14cd93027789a6021.svg",
     "static/media/mail-svgrepo-com.svg": "/static/media/mail-svgrepo-com.0e35522e27d2a90ec68d671f04576561.svg",
-    "main.c47f64f5.css.map": "/static/css/main.c47f64f5.css.map",
+    "main.90b829fc.css.map": "/static/css/main.90b829fc.css.map",
     "main.8e5ceb59.js.map": "/static/js/main.8e5ceb59.js.map",
     "787.3b7ab155.chunk.js.map": "/static/js/787.3b7ab155.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c47f64f5.css",
+    "static/css/main.90b829fc.css",
     "static/js/main.8e5ceb59.js"
   ]
 }
