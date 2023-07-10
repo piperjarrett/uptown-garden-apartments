@@ -63,6 +63,7 @@ h1 {
 .homepage-contact-info {
     width: 25vw;
     overflow-wrap: break-word;
+    font-size: 3vh;
 }
 
 .about-info {
@@ -73,6 +74,7 @@ h1 {
     width: 50vw;
     height: 75vh;
     box-sizing: border-box;
+    font-size: 3vh;
 }
 
 .about-paragraph {
@@ -81,4 +83,11 @@ h1 {
 
 .address {
     cursor: pointer;
+}
+
+@media only screen and (max-width:  675px) {
+    .home-header {
+
+ justify-content: center;
+    }
 }
