@@ -212,4 +212,7 @@
   .complex-info {
     flex-wrap: wrap;
   }
+  .complex-overview {
+    margin-right: 0rem !important;
+}
 }
