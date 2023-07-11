@@ -86,7 +86,12 @@ const NavBar = () => {
           <div className="dropdown-content-contact">
             <div className="nav-contact-info">
               <img src={phoneIcon} alt="phone icon" className="phone-icon" />
-              <p>(505)-948-8299</p>
+              <a
+                href="tel:5059488299"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                <p>(505)-948-8299</p>
+              </a>
             </div>
             <div className="nav-contact-info">
               <img src={emailIcon} alt="email icon" className="email-icon" />
