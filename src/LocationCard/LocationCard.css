@@ -2,6 +2,7 @@
         display: flex !important;
         flex-direction: column !important;
         align-items: flex-start !important;
+     
 }
 
 .Card-Content {
@@ -21,7 +22,12 @@
     max-width: 250px !important;
     height: 250px !important;
 }
+.css-r40f8v-MuiTypography-root {
+    padding: 0rem;
+}
+
 
 .css-t1nuxs {
     font-size: 1rem !important;
 }
+
