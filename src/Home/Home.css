@@ -95,10 +95,22 @@ h1 {
  justify-content: center;
     }
     .homepage-bottom, .homepage-middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homepage-middle {
+        display: flex;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .about-info, .homepage-contact {
         height: 100% !important;
+        width: 100%;
+        padding: 0rem;
+    }
+    .div-photo {
+        width: 100vw;
     }
 
 }
