@@ -65,6 +65,7 @@ const Home = () => {
               living space.
             </p>
           </div>
+
           <div
             className="div-photo"
             style={{

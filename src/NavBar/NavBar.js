@@ -82,7 +82,7 @@ const NavBar = () => {
           </p>
         </NavLink>
         <div className="dropdown">
-          <p>Contact Us</p>
+          <p className="contact-us">Contact Us</p>
           <div className="dropdown-content-contact">
             <div className="nav-contact-info">
               <img src={phoneIcon} alt="phone icon" className="phone-icon" />
