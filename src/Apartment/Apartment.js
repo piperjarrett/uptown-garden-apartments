@@ -19,7 +19,6 @@ import { NavLink } from "react-router-dom";
 import leftArrow from "../assets/left-arrow.png";
 
 const Apartment = ({ apartmentMatch }) => {
-  console.log(apartmentMatch);
   const [apartment, setApartment] = useState([]);
   const [error, setError] = useState("");
 
@@ -34,7 +33,7 @@ const Apartment = ({ apartmentMatch }) => {
   const openEmail = () => {
     window.open("mailto:uptowngardensabq@gmail.com?");
   };
-  console.log(apartmentMatch);
+
   const apartmentAmentities = apartment.ameneties
     ?.split(".")
     .map((amentity) => {
