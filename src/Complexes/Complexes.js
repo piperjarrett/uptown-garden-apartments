@@ -24,8 +24,6 @@ const Complexes = ({ complexName }) => {
     }
   }, [complexName]);
 
-  console.log(complexName);
-
   const apartments = complex.apartments?.map((apartment) => {
     return (
       <div className="complex-apartment" key={apartment.id}>

@@ -16,7 +16,6 @@ h1 {
 
 .homepage-content-container {
     background: #f4f4f4;
-    /* padding: 2rem; */
 }
 .homepage-middle, .homepage-bottom {
     display: flex;
@@ -25,7 +24,6 @@ h1 {
 }
 
 .homepage-middle  img {
-    /* width: 60%; */
     width: 50vw;
     height: 75vh;
     box-sizing: border-box;
@@ -33,16 +31,11 @@ h1 {
 }
 
 .homepage-bottom img {
-    /* width: 50vw;
-    height: 75vh; */
     box-sizing: border-box;
-    /* object-fit: cover; */
     max-width:100%; height:auto
 }
 
-/* .homepage-bottom, p {
-    font-size: 2vh;
-} */
+
 
 .div-photo {
         width: 50vw;
@@ -54,14 +47,12 @@ h1 {
 .homepage-contact {
     display: flex;
     justify-content: space-around;
-    /* border-top: 1px solid #884d3b;
-    border-bottom: 1px solid #884d3b; */
     padding: 1rem;
    align-items: center;
     flex-direction: column;
     width: 50vw;
     height: 75vh;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 .homepage-contact-info {
@@ -77,8 +68,8 @@ h1 {
     justify-content: center;
     width: 50vw;
     height: 75vh;
-    /* box-sizing: border-box; */
     font-size: 3vh;
+    box-sizing: border-box;
 }
 
 .about-paragraph {
@@ -94,6 +85,9 @@ h1 {
 
  justify-content: center;
     }
+    .about-info, h2 {
+        font-size: 1.17rem;
+    }
     .homepage-bottom, .homepage-middle {
         display: flex;
         flex-direction: column;
@@ -107,10 +101,25 @@ h1 {
     .about-info, .homepage-contact {
         height: 100% !important;
         width: 100%;
-        padding: 0rem;
+        padding: .4rem;
+        padding: 3rem;
+    }
+    .homepage-contact {
+        display: flex;
+        flex-direction: row;
+
     }
     .div-photo {
         width: 100vw;
+    }
+    .homepage-contact-info, p {
+        font-size: .5rem;
+        padding-right: 0rem !important;
+    }
+    .about-paragraph {
+        padding-right: 0rem !important;
+        font-size: .5rem;
+    width: 90vw;
     }
 
 }

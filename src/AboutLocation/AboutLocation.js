@@ -14,7 +14,7 @@ const AboutLocation = () => {
       .then((data) => setAboutLocation(data))
       .catch((err) => setError("There was an error"));
   }, []);
-  console.log(aboutLocation);
+
   const aboutLocationCards = Object.keys(aboutLocation).map(
     (aboutLocationKey, index) => {
       let keyToUpperCase;
