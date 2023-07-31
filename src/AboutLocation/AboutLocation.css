@@ -44,7 +44,7 @@
 .about-location-top p {
     font-size: 18px;
     width: 30vw;
-    padding: 5rem;
+    padding: 5rem !important;
     border-radius: 4px;
     background: #884d3b;
     opacity: .8;
@@ -53,7 +53,7 @@
 
 
 .about-location h2 {
-    width: 20rem;
+    width: 30rem;
     font-size: 3rem;
 }
 

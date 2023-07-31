@@ -12,7 +12,7 @@ const AboutLocation = () => {
   useEffect(() => {
     aboutLocationRequest()
       .then((data) => setAboutLocation(data))
-      .catch((err) => setError("There was an error"));
+      .catch((err) => setError(err));
   }, []);
 
   const aboutLocationCards = Object.keys(aboutLocation).map(
@@ -32,6 +32,7 @@ const AboutLocation = () => {
           return <LocationCard details={detail} key={index} />;
         }
       );
+
       return (
         <div className="near-by-attraction" key={index}>
           <h4>{keyToUpperCase}</h4>
