@@ -154,18 +154,10 @@ li {
     flex-wrap: wrap;
 }
 
-/* .modal-image {
-    width: 3rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-  }
 
-  .modal-image:hover {
-    cursor: pointer
-  } */
 
   .apartment-image-swiper {
-    width: 45vw;
+    width: 100%;
     height: 70vh;;
   }
   
@@ -216,17 +208,6 @@ li {
      
     }
 
-  
-    /* .ReactModal__Content {
-      padding: 0rem !important;
-      border-color: none !important;
-      background: none !important;
-      --swiper-theme-color: none !important;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    } */
 
     .swiper-pagination {
       --swiper-pagination-bullet-vertical-gap: 10rem !important;
@@ -238,30 +219,6 @@ li {
       background-color: #000 !important;
     }
   
-  /* .close-img-div {
-    display: flex;
-    justify-content: flex-end;
-  }
-    .close-img {
-      width: 2rem;
-      margin-left: 2rem;
-    }
-  .close-img:hover {
-    cursor: pointer;
-  } */
-    /* .ReactModal__Overlay {
-      opacity: 0;
-      transition: opacity 500ms ease-in-out;
-    
-  }
-  
-  .ReactModal__Overlay--after-open{
-      opacity: 1;
-  }
-  
-  .ReactModal__Overlay--before-close{
-      opacity: 0;
-  } */
   
   .swiper-images {
     width: 40rem;
@@ -311,5 +268,18 @@ li {
       align-items: center;
       border-bottom: 1px solid black;
  
+    }
+  }
+
+  @media only screen and (max-width:  655px) { 
+    .apartment-image-swiper {
+      width: 45vw;
+      height: 70vh;;
+    }
+    .swiper-slide {
+      width: 45vw !important;
+    }
+    .swiper-images {
+      width: 45vw;
     }
   }
